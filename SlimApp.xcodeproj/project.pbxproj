@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		F20F2C6D296DBBE300EADAE6 /* SlimAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F2C6C296DBBE300EADAE6 /* SlimAppApp.swift */; };
-		F20F2C6F296DBBE300EADAE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F2C6E296DBBE300EADAE6 /* ContentView.swift */; };
+		F20F2C6F296DBBE300EADAE6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F2C6E296DBBE300EADAE6 /* HomeView.swift */; };
 		F20F2C71296DBBE400EADAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20F2C70296DBBE400EADAE6 /* Assets.xcassets */; };
 		F20F2C74296DBBE400EADAE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20F2C73296DBBE400EADAE6 /* Preview Assets.xcassets */; };
+		F20F2C7B296DBD6D00EADAE6 /* ClientCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F2C7A296DBD6D00EADAE6 /* ClientCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F20F2C69296DBBE300EADAE6 /* SlimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20F2C6C296DBBE300EADAE6 /* SlimAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlimAppApp.swift; sourceTree = "<group>"; };
-		F20F2C6E296DBBE300EADAE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F20F2C6E296DBBE300EADAE6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F20F2C70296DBBE400EADAE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F20F2C73296DBBE400EADAE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F20F2C7A296DBD6D00EADAE6 /* ClientCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				F20F2C6C296DBBE300EADAE6 /* SlimAppApp.swift */,
-				F20F2C6E296DBBE300EADAE6 /* ContentView.swift */,
+				F20F2C6E296DBBE300EADAE6 /* HomeView.swift */,
+				F20F2C7A296DBD6D00EADAE6 /* ClientCard.swift */,
 				F20F2C70296DBBE400EADAE6 /* Assets.xcassets */,
 				F20F2C72296DBBE400EADAE6 /* Preview Content */,
 			);
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F20F2C6F296DBBE300EADAE6 /* ContentView.swift in Sources */,
+				F20F2C7B296DBD6D00EADAE6 /* ClientCard.swift in Sources */,
+				F20F2C6F296DBBE300EADAE6 /* HomeView.swift in Sources */,
 				F20F2C6D296DBBE300EADAE6 /* SlimAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
