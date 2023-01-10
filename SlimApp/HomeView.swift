@@ -12,15 +12,21 @@ struct HomeView: View {
         ZStack {
             Color("Background")
                 .ignoresSafeArea()
-//            NavigationView {
+            NavigationView {
                 ScrollView {
                     content
                         
                 }
-                .navigationTitle("Clients")
-                
-//            }
 
+                .navigationTitle("Clients")
+                .toolbar {
+                    Button {
+                        //
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
         }
     }
 }
@@ -29,10 +35,12 @@ struct HomeView: View {
 extension HomeView {
     var content: some View {
         VStack(alignment: .leading, spacing: 0) {
-            Text("Clients")
-                .font(.system(size: 34, weight: .bold))
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal, 20)
+
+//            Text("Clients")
+//                .font(.system(size: 34, weight: .bold))
+//                .frame(maxWidth: .infinity, alignment: .leading)
+//                .padding(.horizontal, 20)
+
 
 //            Divider()
 
@@ -41,6 +49,7 @@ extension HomeView {
                     ClientCard()
                 }
                 .padding(15)
+
             }
         }
     }
