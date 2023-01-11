@@ -8,31 +8,47 @@
 import SwiftUI
 
 struct ClientCard: View {
+    @State private var showingSheet = false
     var name: String = "Antonio Ferrari"
     var nextTraining: String = "Today"
 
     var body: some View {
-        HStack(spacing: 20) {
-            VStack(alignment: .leading, spacing: 8) {
+        Button {
+            showingSheet.toggle()
+        } label: {
+            HStack(spacing: 20) {
+                VStack(alignment: .leading, spacing: 8) {
                     Text(name)
                         .font(.system(size: 24, weight: .bold))
-                Text(nextTraining)
-                    .font(.system(size: 18, weight: .regular))
+                    Text(nextTraining)
+                        .font(.system(size: 18, weight: .regular))
+                }
+
+                Spacer()
+                Divider()
+                Image("4aces")
+                    .resizable()
+                    .scaledToFit()
             }
-
-            Spacer()
-
-            Divider()
-
-            Image("4aces")
-                .resizable()
-                .scaledToFit()
+            .padding(20)
+            .frame(maxWidth: .infinity, maxHeight: 110)
+            .background(.purple)
+            .foregroundColor(.white)
+            .mask(RoundedRectangle(cornerRadius: 28, style: .continuous))
+            .sheet(isPresented: $showingSheet) {
+                // MARK: Test ModalView, that will show a client info by clicking on ClientCard
+                TestModal()
+            }
         }
-        .padding(20)
-        .frame(maxWidth: .infinity, maxHeight: 110)
-        .background(.purple)
-        .foregroundColor(.white)
-        .mask(RoundedRectangle(cornerRadius: 28, style: .continuous))
+    }
+}
+
+struct TestModal: View {
+    @Environment(\.dismiss) var dismiss
+    var body: some View {
+        Button("Dismiss") {
+            dismiss()
+        }
     }
 }
 
