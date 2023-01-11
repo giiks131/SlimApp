@@ -9,19 +9,17 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        ZStack {
-            Color("Background")
-                .ignoresSafeArea()
             NavigationView {
+                ZStack {
+                    Color("Background")
+                        .ignoresSafeArea()
                 ScrollView {
                     content
-                        
                 }
-
                 .navigationTitle("Clients")
                 .toolbar {
                     Button {
-                        //
+                        //MARK: would open 
                     } label: {
                         Image(systemName: "plus")
                     }
@@ -31,25 +29,14 @@ struct HomeView: View {
     }
 }
 
-
 extension HomeView {
     var content: some View {
         VStack(alignment: .leading, spacing: 0) {
-
-//            Text("Clients")
-//                .font(.system(size: 34, weight: .bold))
-//                .frame(maxWidth: .infinity, alignment: .leading)
-//                .padding(.horizontal, 20)
-
-
-//            Divider()
-
             ForEach(0 ..< 5) { item in
                 VStack(spacing: 20) {
                     ClientCard()
                 }
                 .padding(15)
-
             }
         }
     }
