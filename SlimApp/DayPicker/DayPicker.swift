@@ -16,11 +16,12 @@ struct DayPicker: View {
                     select(day)
                 }
                 .padding(8)
-                .foregroundColor(isSelected(day) ? .purple : .primary)
+                .foregroundColor(isSelected(day) ? .white : .purple)
                 .background {
                     RoundedRectangle(cornerRadius: 4)
                         .stroke(lineWidth: 2)
-                        .foregroundColor(isSelected(day) ? Color.purple : .clear)
+                        .foregroundColor(.purple)
+                        .overlay(isSelected(day) ? Color.purple : .clear)
                 }
             }
         }
