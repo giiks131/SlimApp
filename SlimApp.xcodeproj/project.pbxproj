@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E99977C296F030E00AA184B /* ClientDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E99977B296F030E00AA184B /* ClientDetailsView.swift */; };
 		F20F2C6D296DBBE300EADAE6 /* SlimAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F2C6C296DBBE300EADAE6 /* SlimAppApp.swift */; };
 		F20F2C6F296DBBE300EADAE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F2C6E296DBBE300EADAE6 /* ContentView.swift */; };
 		F20F2C71296DBBE400EADAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20F2C70296DBBE400EADAE6 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E99977B296F030E00AA184B /* ClientDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDetailsView.swift; sourceTree = "<group>"; };
 		F20F2C69296DBBE300EADAE6 /* SlimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20F2C6C296DBBE300EADAE6 /* SlimAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlimAppApp.swift; sourceTree = "<group>"; };
 		F20F2C6E296DBBE300EADAE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E99977A296F02E900AA184B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9E99977B296F030E00AA184B /* ClientDetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F20F2C60296DBBE300EADAE6 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +61,7 @@
 		F20F2C6B296DBBE300EADAE6 /* SlimApp */ = {
 			isa = PBXGroup;
 			children = (
+				9E99977A296F02E900AA184B /* View */,
 				F20F2C6C296DBBE300EADAE6 /* SlimAppApp.swift */,
 				F20F2C6E296DBBE300EADAE6 /* ContentView.swift */,
 				F20F2C70296DBBE400EADAE6 /* Assets.xcassets */,
@@ -139,6 +150,7 @@
 			files = (
 				F20F2C6F296DBBE300EADAE6 /* ContentView.swift in Sources */,
 				F20F2C6D296DBBE300EADAE6 /* SlimAppApp.swift in Sources */,
+				9E99977C296F030E00AA184B /* ClientDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
