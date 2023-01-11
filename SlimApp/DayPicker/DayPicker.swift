@@ -15,7 +15,13 @@ struct DayPicker: View {
                 Button(day.abbrv) {
                     select(day)
                 }
+                .padding(8)
                 .foregroundColor(isSelected(day) ? .blue : .primary)
+                .background {
+                    RoundedRectangle(cornerRadius: 4)
+                        .stroke(lineWidth: 2)
+                        .foregroundColor(isSelected(day) ? Color.blue : .clear)
+                }
             }
         }
     }
