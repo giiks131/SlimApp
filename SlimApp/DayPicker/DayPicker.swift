@@ -16,11 +16,11 @@ struct DayPicker: View {
                     select(day)
                 }
                 .padding(8)
-                .foregroundColor(isSelected(day) ? .blue : .primary)
+                .foregroundColor(isSelected(day) ? .purple : .primary)
                 .background {
                     RoundedRectangle(cornerRadius: 4)
                         .stroke(lineWidth: 2)
-                        .foregroundColor(isSelected(day) ? Color.blue : .clear)
+                        .foregroundColor(isSelected(day) ? Color.purple : .clear)
                 }
             }
         }
@@ -41,6 +41,6 @@ struct DayPicker: View {
 
 struct DayPicker_Previews: PreviewProvider {
     static var previews: some View {
-        DayPicker(days: .constant([]))
+        DayPicker(days: .constant([.monday]))
     }
 }
