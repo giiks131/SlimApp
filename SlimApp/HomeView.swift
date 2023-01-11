@@ -45,11 +45,10 @@ extension HomeView {
 //            Divider()
 
             ForEach(0 ..< 5) { item in
-                VStack(spacing: 20) {
+                VStack(spacing: 15) {
                     ClientCard()
                 }
-                .padding(15)
-
+                .padding()
             }
         }
     }

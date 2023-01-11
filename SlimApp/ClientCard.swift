@@ -8,24 +8,31 @@
 import SwiftUI
 
 struct ClientCard: View {
+    var name: String = "Antonio Ferrari"
+    var nextTraining: String = "Today"
+
     var body: some View {
         HStack(spacing: 20) {
             VStack(alignment: .leading, spacing: 8) {
-                Text("Antonio Ferrari")
-                    .font(.system(size: 24, weight: .bold))
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .layoutPriority(1)
-                Text("Today")
+                    Text(name)
+                        .font(.system(size: 24, weight: .bold))
+                Text(nextTraining)
                     .font(.system(size: 18, weight: .regular))
             }
+
+            Spacer()
+
             Divider()
-            Image("Topic")
+
+            Image("4aces")
+                .resizable()
+                .scaledToFit()
         }
         .padding(20)
         .frame(maxWidth: .infinity, maxHeight: 110)
         .background(.purple)
         .foregroundColor(.white)
-        .mask(RoundedRectangle(cornerRadius: 25, style: .continuous))
+        .mask(RoundedRectangle(cornerRadius: 28, style: .continuous))
     }
 }
 
