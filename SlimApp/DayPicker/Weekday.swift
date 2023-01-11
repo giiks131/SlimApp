@@ -9,4 +9,8 @@ import Foundation
 
 enum Weekday: String, CaseIterable {
     case monday, tuesday, wednesday, thursday, friday, saturday, sunday
+    
+    var abbrv: String {
+        rawValue.prefix(3).capitalized
+    }
 }
