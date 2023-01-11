@@ -26,6 +26,7 @@ struct ClientCard: View {
 
                 Spacer()
                 Divider()
+                //MARK: Test image, would be changed on client avatar
                 Image("4aces")
                     .resizable()
                     .scaledToFit()
