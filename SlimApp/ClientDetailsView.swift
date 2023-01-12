@@ -18,7 +18,6 @@ struct ClientDetailsView: View {
                         .foregroundColor(.white)
                         .font(.system(size: 150))
                 }
-            
             List {
                 Section {
                     Text("Antonio")
@@ -26,32 +25,27 @@ struct ClientDetailsView: View {
                 } header: {
                     Text("Name and Surname")
                 }
-                
                 Section {
                     Text("24/08/1992")
                 } header: {
                     Text("Date of Birth")
                 }
-                
                 Section {
                     Text("67 Kg")
                 } header: {
                     Text("Weight and Height")
                 }
-                
                 Section {
                     Text("Build Muscle")
                     Text("Desired weight : 76 Kg ")
                 } header: {
                     Text("Goals")
                 }
-                
                 Section {
                     Text("Lorem ipsum")
                 } header: {
                     Text("Diseases")
                 }
-                
                 Section {
                     Text("Lorem ipsum")
                 } header: {

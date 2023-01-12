@@ -26,11 +26,9 @@ struct DayPicker: View {
             }
         }
     }
-    
     func isSelected(_ day: Weekday) -> Bool {
         days.contains(day)
     }
-    
     func select(_ day: Weekday) {
         if let index = days.firstIndex(of: day) {
             days.remove(at: index)
