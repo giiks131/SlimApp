@@ -13,6 +13,7 @@ struct NewClientView: View {
     
     var body: some View {
         NavigationView {
+            // TODO: e.grishina rewrite it with ScrollView
             Form {
                 Section {
                     TextField("Name", text: $viewModel.name)
