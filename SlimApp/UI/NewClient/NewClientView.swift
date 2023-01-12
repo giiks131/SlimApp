@@ -28,6 +28,11 @@ struct NewClientView: View {
                     TextField("Weight", text: $viewModel.weight)
                         .keyboardType(.numberPad)
                 }
+                Section {
+                    DayPicker(days: $viewModel.workoutDays)
+                        .buttonStyle(.borderless)
+                        .listRowInsets(EdgeInsets(top: 4, leading: 4, bottom: 4, trailing: 4))
+                }
                 Section("Notes") {
                     TextEditor(text: $viewModel.notes)
                 }
@@ -36,7 +41,6 @@ struct NewClientView: View {
                 } label: {
                     Text("Save")
                         .frame(width: UIScreen.main.bounds.width)
-                        .padding(.horizontal, -16)
                 }
                 .buttonStyle(.borderless)
             }

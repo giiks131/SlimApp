@@ -16,4 +16,5 @@ class NewClientViewModel: ObservableObject {
     @Published var height: String = ""
     @Published var weight: String = ""
     @Published var notes: String = ""
+    @Published var workoutDays: [Weekday] = []
 }

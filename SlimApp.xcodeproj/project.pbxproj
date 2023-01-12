@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB0DF453296F02F8001DAD3E /* DayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0DF452296F02F8001DAD3E /* DayPicker.swift */; };
-		DB0DF456296F0325001DAD3E /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0DF455296F0325001DAD3E /* Weekday.swift */; };
 		C19BD9BB296F02D80037B081 /* NewClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19BD9BA296F02D80037B081 /* NewClientView.swift */; };
 		C19BD9BD296F06BE0037B081 /* NewClientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19BD9BC296F06BE0037B081 /* NewClientViewModel.swift */; };
+		DB0DF453296F02F8001DAD3E /* DayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0DF452296F02F8001DAD3E /* DayPicker.swift */; };
+		DB0DF456296F0325001DAD3E /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0DF455296F0325001DAD3E /* Weekday.swift */; };
 		F20F2C6D296DBBE300EADAE6 /* SlimAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F2C6C296DBBE300EADAE6 /* SlimAppApp.swift */; };
 		F20F2C6F296DBBE300EADAE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F2C6E296DBBE300EADAE6 /* ContentView.swift */; };
 		F20F2C71296DBBE400EADAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20F2C70296DBBE400EADAE6 /* Assets.xcassets */; };
@@ -18,10 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DB0DF452296F02F8001DAD3E /* DayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPicker.swift; sourceTree = "<group>"; };
-		DB0DF455296F0325001DAD3E /* Weekday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weekday.swift; sourceTree = "<group>"; };
 		C19BD9BA296F02D80037B081 /* NewClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientView.swift; sourceTree = "<group>"; };
 		C19BD9BC296F06BE0037B081 /* NewClientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientViewModel.swift; sourceTree = "<group>"; };
+		DB0DF452296F02F8001DAD3E /* DayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPicker.swift; sourceTree = "<group>"; };
+		DB0DF455296F0325001DAD3E /* Weekday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weekday.swift; sourceTree = "<group>"; };
 		F20F2C69296DBBE300EADAE6 /* SlimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20F2C6C296DBBE300EADAE6 /* SlimAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlimAppApp.swift; sourceTree = "<group>"; };
 		F20F2C6E296DBBE300EADAE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,15 +40,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DB0DF454296F0303001DAD3E /* DayPicker */ = {
-			isa = PBXGroup;
-			children = (
-				DB0DF452296F02F8001DAD3E /* DayPicker.swift */,
-				DB0DF455296F0325001DAD3E /* Weekday.swift */,
-			);
-			path = DayPicker;
-			sourceTree = "<group>";
-		};
 		C19BD9B8296F02990037B081 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +55,15 @@
 				C19BD9BC296F06BE0037B081 /* NewClientViewModel.swift */,
 			);
 			path = NewClient;
+			sourceTree = "<group>";
+		};
+		DB0DF454296F0303001DAD3E /* DayPicker */ = {
+			isa = PBXGroup;
+			children = (
+				DB0DF452296F02F8001DAD3E /* DayPicker.swift */,
+				DB0DF455296F0325001DAD3E /* Weekday.swift */,
+			);
+			path = DayPicker;
 			sourceTree = "<group>";
 		};
 		F20F2C60296DBBE300EADAE6 = {
