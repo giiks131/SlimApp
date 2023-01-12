@@ -61,6 +61,7 @@ struct ClientDetailsView: View {
                 
                 
             }
+            .listStyle(.insetGrouped)
         }
         .navigationTitle("Client details")
         .navigationBarTitleDisplayMode(.inline)
