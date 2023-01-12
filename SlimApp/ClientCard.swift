@@ -34,8 +34,8 @@ struct ClientCard: View {
             .padding(20)
             .frame(maxHeight: 110)
             .background(.purple)
+            .cornerRadius(28)
             .foregroundColor(.white)
-            .mask(RoundedRectangle(cornerRadius: 28, style: .continuous))
             .sheet(isPresented: $isShowingSheet) {
                 // MARK: open ModalView, that will show a client info by clicking on ClientCard
             }
