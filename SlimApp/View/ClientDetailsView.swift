@@ -10,14 +10,13 @@ import SwiftUI
 struct ClientDetailsView: View {
     var body: some View {
         VStack {
-            
             Circle()
                 .foregroundColor(.gray)
                 .frame(width: 200, alignment: .center)
                 .overlay {
                     Image(systemName: "person.fill")
                         .foregroundColor(.white)
-                        .font(.custom("sf-arabic", fixedSize: 150))
+                        .font(.system(size: 150))
                 }
             
             List {
@@ -58,8 +57,6 @@ struct ClientDetailsView: View {
                 } header: {
                     Text("Notes")
                 }
-                
-                
             }
             .listStyle(.insetGrouped)
         }
