@@ -31,9 +31,14 @@ struct NewClientView: View {
                 Section("Notes") {
                     TextEditor(text: $viewModel.notes)
                 }
-            }
-            .onTapGesture {
-                endEditing()
+                Button {
+                    #warning("Implement saving client information")
+                } label: {
+                    Text("Save")
+                        .frame(width: UIScreen.main.bounds.width)
+                        .padding(.horizontal, -16)
+                }
+                .buttonStyle(.borderless)
             }
             .navigationTitle("New client")
         }

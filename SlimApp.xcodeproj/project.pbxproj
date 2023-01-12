@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C19BD9BB296F02D80037B081 /* NewClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19BD9BA296F02D80037B081 /* NewClientView.swift */; };
 		C19BD9BD296F06BE0037B081 /* NewClientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19BD9BC296F06BE0037B081 /* NewClientViewModel.swift */; };
-		C19BD9C0296FFBC40037B081 /* UIView+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19BD9BF296FFBC40037B081 /* UIView+Keyboard.swift */; };
 		F20F2C6D296DBBE300EADAE6 /* SlimAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F2C6C296DBBE300EADAE6 /* SlimAppApp.swift */; };
 		F20F2C6F296DBBE300EADAE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F2C6E296DBBE300EADAE6 /* ContentView.swift */; };
 		F20F2C71296DBBE400EADAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20F2C70296DBBE400EADAE6 /* Assets.xcassets */; };
@@ -19,7 +18,6 @@
 /* Begin PBXFileReference section */
 		C19BD9BA296F02D80037B081 /* NewClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientView.swift; sourceTree = "<group>"; };
 		C19BD9BC296F06BE0037B081 /* NewClientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientViewModel.swift; sourceTree = "<group>"; };
-		C19BD9BF296FFBC40037B081 /* UIView+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Keyboard.swift"; sourceTree = "<group>"; };
 		F20F2C69296DBBE300EADAE6 /* SlimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20F2C6C296DBBE300EADAE6 /* SlimAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlimAppApp.swift; sourceTree = "<group>"; };
 		F20F2C6E296DBBE300EADAE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,7 +39,6 @@
 		C19BD9B8296F02990037B081 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				C19BD9BE296FFBA00037B081 /* Extensions */,
 				C19BD9B9296F02A00037B081 /* NewClient */,
 			);
 			path = UI;
@@ -54,14 +51,6 @@
 				C19BD9BC296F06BE0037B081 /* NewClientViewModel.swift */,
 			);
 			path = NewClient;
-			sourceTree = "<group>";
-		};
-		C19BD9BE296FFBA00037B081 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				C19BD9BF296FFBC40037B081 /* UIView+Keyboard.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F20F2C60296DBBE300EADAE6 = {
@@ -174,7 +163,6 @@
 				C19BD9BB296F02D80037B081 /* NewClientView.swift in Sources */,
 				F20F2C6F296DBBE300EADAE6 /* ContentView.swift in Sources */,
 				F20F2C6D296DBBE300EADAE6 /* SlimAppApp.swift in Sources */,
-				C19BD9C0296FFBC40037B081 /* UIView+Keyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
