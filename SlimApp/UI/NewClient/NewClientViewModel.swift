@@ -7,7 +7,7 @@
 
 import Foundation
 
-class NewClientViewModel: ObservableObject {
+final class NewClientViewModel: ObservableObject {
     
     @Published var name: String = ""
     @Published var surname: String = ""
