@@ -34,14 +34,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9E99977A296F02E900AA184B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				9E99977B296F030E00AA184B /* ClientDetailsView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		F20F2C60296DBBE300EADAE6 = {
 			isa = PBXGroup;
 			children = (
@@ -61,7 +53,7 @@
 		F20F2C6B296DBBE300EADAE6 /* SlimApp */ = {
 			isa = PBXGroup;
 			children = (
-				9E99977A296F02E900AA184B /* View */,
+				9E99977B296F030E00AA184B /* ClientDetailsView.swift */,
 				F20F2C6C296DBBE300EADAE6 /* SlimAppApp.swift */,
 				F20F2C6E296DBBE300EADAE6 /* ContentView.swift */,
 				F20F2C70296DBBE400EADAE6 /* Assets.xcassets */,
