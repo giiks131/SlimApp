@@ -21,7 +21,6 @@ struct HomeView: View {
                 .navigationTitle("Clients")
                 .toolbar {
                     Button {
-                        // MARK: open a ModalView to create a new client card
                         isShowingSheet.toggle()
                     } label: {
                         Image(systemName: "plus")
