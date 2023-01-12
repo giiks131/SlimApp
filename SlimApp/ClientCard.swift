@@ -10,7 +10,6 @@ import SwiftUI
 struct ClientCard: View {
     var name: String = "Antonio Ferrarissssss"
     var nextTraining: String = "Today"
-    
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
@@ -21,7 +20,7 @@ struct ClientCard: View {
             }
             Spacer()
             Divider()
-            //MARK: Test image, would be changed on client avatar
+            // MARK: Test image, would be changed on client avatar
             Image("4aces")
                 .resizable()
                 .scaledToFit()
@@ -32,7 +31,6 @@ struct ClientCard: View {
         .cornerRadius(28)
         .foregroundColor(.white)
     }
-    
 }
 
 struct ClientCard_Previews: PreviewProvider {
