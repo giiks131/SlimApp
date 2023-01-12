@@ -16,7 +16,7 @@ struct HomeView: View {
                 Color("Background")
                     .ignoresSafeArea()
                 ScrollView {
-                    content
+                    // MARK: display View with array of clients' cards Data
                 }
                 .navigationTitle("Clients")
                 .toolbar {
@@ -30,23 +30,6 @@ struct HomeView: View {
                 .sheet(isPresented: $isShowingSheet) {
                     // MARK: View with new client info
                 }
-            }
-        }
-    }
-}
-
-extension HomeView {
-    var content: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            ForEach(0 ..< 5) { item in
-                VStack(spacing: 15) {
-                    NavigationLink {
-                        // MARK: open View, that will show a client info by clicking on ClientCard
-                    } label: {
-                        ClientCard()
-                    }
-                }
-                .padding()
             }
         }
     }
