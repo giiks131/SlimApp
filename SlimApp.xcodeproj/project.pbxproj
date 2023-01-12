@@ -95,9 +95,9 @@
 			buildConfigurationList = F20F2C77296DBBE400EADAE6 /* Build configuration list for PBXNativeTarget "SlimApp" */;
 			buildPhases = (
 				F20F2C65296DBBE300EADAE6 /* Sources */,
-				DB0DF45729706CB3001DAD3E /* ShellScript */,
 				F20F2C66296DBBE300EADAE6 /* Frameworks */,
 				F20F2C67296DBBE300EADAE6 /* Resources */,
+				DB0DF45729706CB3001DAD3E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -156,6 +156,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		DB0DF45729706CB3001DAD3E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
