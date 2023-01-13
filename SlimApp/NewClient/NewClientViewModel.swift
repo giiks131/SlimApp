@@ -8,7 +8,6 @@
 import Foundation
 
 final class NewClientViewModel: ObservableObject {
-    
     @Published var name: String = ""
     @Published var surname: String = ""
     @Published var email: String = ""

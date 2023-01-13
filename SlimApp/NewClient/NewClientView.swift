@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct NewClientView: View {
-    
     @StateObject var viewModel: NewClientViewModel
-    
     var body: some View {
         NavigationView {
             // TODO: e.grishina rewrite it with ScrollView
