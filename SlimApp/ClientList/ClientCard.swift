@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct ClientCard: View {
-    var name: String = "Antonio Ferrarissssss"
+    var name: String = "Antonio Ferraris"
     var nextTraining: String = "Today"
     var body: some View {
         HStack {
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .frame(width: 61, height: 61, alignment: .center)
+                .padding()
             VStack(alignment: .leading) {
                 Text(name)
                     .font(.system(size: 24, weight: .bold))
@@ -20,16 +23,12 @@ struct ClientCard: View {
             }
             Spacer()
             Divider()
-            // MARK: Test image, would be changed on client avatar
-            Image("4aces")
-                .resizable()
-                .scaledToFit()
         }
-        .padding()
         .frame(maxHeight: 110)
         .background(.purple)
         .cornerRadius(28)
         .foregroundColor(.white)
+        
     }
 }
 
