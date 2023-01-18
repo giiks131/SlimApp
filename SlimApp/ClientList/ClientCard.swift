@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ClientCard: View {
     var name: String = "Antonio Ferraris"
-    var nextTraining: String = "Today"
     var body: some View {
         HStack {
             RoundedRectangle(cornerRadius: 16, style: .continuous)
@@ -18,19 +17,21 @@ struct ClientCard: View {
             VStack(alignment: .leading) {
                 Text(name)
                     .font(.system(size: 24, weight: .bold))
-                Text(nextTraining)
-                    .font(.system(size: 18, weight: .regular))
             }
             Spacer()
             ZStack {
                 Rectangle()
                     .foregroundColor(Color("CustomPaletteBlack"))
-                    .frame(width: 70, height: 200, alignment: .trailing)
-                HStack(alignment: .lastTextBaseline, spacing: 0) {
-                    Text("12")
-                        .font(.title.bold())
-                    Text("JAN")
-                        .font(.subheadline)
+                    .frame(width: 80, height: 200, alignment: .trailing)
+                VStack {
+                    HStack(alignment: .lastTextBaseline, spacing: 0) {
+                        Text("12")
+                            .font(.title.bold())
+                        Text("JAN")
+                            .font(.subheadline)
+                    }
+                    Text("16:00")
+                        .font(.title3.bold())
                 }
             }
         }
