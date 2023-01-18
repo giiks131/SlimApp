@@ -22,13 +22,22 @@ struct ClientCard: View {
                     .font(.system(size: 18, weight: .regular))
             }
             Spacer()
-            Divider()
+            ZStack {
+                Rectangle()
+                    .foregroundColor(Color("CustomPaletteBlack"))
+                    .frame(width: 70, height: 200, alignment: .trailing)
+                HStack(alignment: .lastTextBaseline, spacing: 0) {
+                    Text("12")
+                        .font(.title.bold())
+                    Text("JAN")
+                        .font(.subheadline)
+                }
+            }
         }
         .frame(maxHeight: 110)
-        .background(.purple)
+        .background(Color("CustomPaletteTeal"))
         .cornerRadius(28)
         .foregroundColor(.white)
-        
     }
 }
 
