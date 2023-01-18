@@ -10,7 +10,7 @@ import SwiftUI
 struct ClientCard: View {
     var clientName: String = "Antonio Ferraris"
     var body: some View {
-        HStack {
+        HStack(spacing: 0) {
             RoundedRectangle(cornerRadius: 16, style: .continuous)
                 .frame(width: 61, height: 61, alignment: .center)
                 .padding()
@@ -19,10 +19,28 @@ struct ClientCard: View {
                         .foregroundColor(.black.opacity(0.2))
                         .font(.system(size: 50))
                 }
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 4) {
                 Text(clientName)
-                    .font(.system(size: 24, weight: .bold))
+                    .font(.title2.bold())
+                HStack(spacing: 4) {
+                    RoundedRectangle(cornerRadius: 24, style: .continuous)
+                        .frame(height: 20, alignment: .center)
+                        .overlay {
+                            Text("Muscle")
+                                .font(.subheadline)
+                                .foregroundColor(.black)
+                        }
+                    RoundedRectangle(cornerRadius: 24, style: .continuous)
+                        .frame(height: 20, alignment: .center)
+                        .overlay {
+                            Text("Weight-loss")
+                                .font(.subheadline)
+                                .foregroundColor(.black)
+                        }
+                    Spacer()
+                }
             }
+            Spacer()
             ZStack {
                 Rectangle()
                     .foregroundColor(Color("CustomPaletteBlack"))
@@ -39,7 +57,7 @@ struct ClientCard: View {
                 }
             }
         }
-        .frame(maxHeight: 110)
+        .frame(width: 370, height: 100, alignment: .leading)
         .background(Color("CustomPaletteTeal"))
         .cornerRadius(28)
         .foregroundColor(.white)
