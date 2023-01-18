@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ClientCard: View {
-    var name: String = "Antonio Ferraris"
+    var clientName: String = "Antonio Ferraris"
     var body: some View {
         HStack {
             RoundedRectangle(cornerRadius: 16, style: .continuous)
@@ -20,10 +20,9 @@ struct ClientCard: View {
                         .font(.system(size: 50))
                 }
             VStack(alignment: .leading) {
-                Text(name)
+                Text(clientName)
                     .font(.system(size: 24, weight: .bold))
             }
-            
             ZStack {
                 Rectangle()
                     .foregroundColor(Color("CustomPaletteBlack"))
