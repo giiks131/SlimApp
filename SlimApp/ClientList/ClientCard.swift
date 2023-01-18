@@ -23,21 +23,20 @@ struct ClientCard: View {
                 Text(clientName)
                     .font(.title2.bold())
                 HStack(spacing: 4) {
-                    RoundedRectangle(cornerRadius: 24, style: .continuous)
-                        .frame(height: 20, alignment: .center)
-                        .overlay {
-                            Text("Muscle")
-                                .font(.subheadline)
-                                .foregroundColor(.black)
+                    Text("Muscle")
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                        .padding(.horizontal, 8)
+                        .background {
+                            RoundedRectangle(cornerRadius: 16)
                         }
-                    RoundedRectangle(cornerRadius: 24, style: .continuous)
-                        .frame(height: 20, alignment: .center)
-                        .overlay {
-                            Text("Weight-loss")
-                                .font(.subheadline)
-                                .foregroundColor(.black)
+                    Text("Weight-loss")
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                        .padding(.horizontal, 8)
+                        .background {
+                            RoundedRectangle(cornerRadius: 16)
                         }
-                    Spacer()
                 }
             }
             Spacer()
