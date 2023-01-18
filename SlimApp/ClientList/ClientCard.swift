@@ -14,11 +14,16 @@ struct ClientCard: View {
             RoundedRectangle(cornerRadius: 16, style: .continuous)
                 .frame(width: 61, height: 61, alignment: .center)
                 .padding()
+                .overlay {
+                    Image(systemName: "person.fill")
+                        .foregroundColor(.black.opacity(0.2))
+                        .font(.system(size: 50))
+                }
             VStack(alignment: .leading) {
                 Text(name)
                     .font(.system(size: 24, weight: .bold))
             }
-            Spacer()
+            
             ZStack {
                 Rectangle()
                     .foregroundColor(Color("CustomPaletteBlack"))
