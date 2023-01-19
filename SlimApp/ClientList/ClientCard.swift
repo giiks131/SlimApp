@@ -43,7 +43,7 @@ struct ClientCard: View {
             ZStack {
                 Rectangle()
                     .foregroundColor(Color.mainBlack)
-                    .frame(width: 80, height: 200, alignment: .trailing)
+                    .frame(width: 80)
                 VStack {
                     HStack(alignment: .lastTextBaseline, spacing: 0) {
                         Text("12")
@@ -56,7 +56,7 @@ struct ClientCard: View {
                 }
             }
         }
-        .frame(width: 370, height: 100, alignment: .leading)
+        .frame(width: 370, height: 100)
         .background(Color.mainTeal)
         .cornerRadius(28)
         .foregroundColor(.white)
