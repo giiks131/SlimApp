@@ -8,10 +8,18 @@
 import Foundation
 
 struct Trainer: Codable, Identifiable {
-    var id: UUID?
-    var name: String
-    var email: String
-    var password: String
-    var clients: [Client]
+    let id: UUID
+    let name: String
+    let email: String
+    let token: String
+    let clients: [Client]
 
+}
+
+extension Trainer {
+    struct New: Encodable{
+        let name: String
+        let email: String
+        let password: String
+    }
 }
