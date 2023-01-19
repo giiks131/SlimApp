@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "spidey",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/inTheAM/Spidey",
+      "state" : {
+        "branch" : "main",
+        "revision" : "1ff4eeb2293599609ab6d6efc911a2ef397171b6"
+      }
+    }
+  ],
+  "version" : 2
+}

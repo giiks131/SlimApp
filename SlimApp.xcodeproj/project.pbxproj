@@ -14,6 +14,7 @@
 		DB0DF453296F02F8001DAD3E /* DayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0DF452296F02F8001DAD3E /* DayPicker.swift */; };
 		DB0DF456296F0325001DAD3E /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0DF455296F0325001DAD3E /* Weekday.swift */; };
 		DB0DF45829706EA9001DAD3E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F2C6E296DBBE300EADAE6 /* HomeView.swift */; };
+		DB68B70B2979A04C0065A368 /* Spidey in Frameworks */ = {isa = PBXBuildFile; productRef = DB68B70A2979A04C0065A368 /* Spidey */; };
 		F20F2C6D296DBBE300EADAE6 /* SlimAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F2C6C296DBBE300EADAE6 /* SlimAppApp.swift */; };
 		F20F2C71296DBBE400EADAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20F2C70296DBBE400EADAE6 /* Assets.xcassets */; };
 		F20F2C74296DBBE400EADAE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20F2C73296DBBE400EADAE6 /* Preview Assets.xcassets */; };
@@ -48,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB68B70B2979A04C0065A368 /* Spidey in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +151,9 @@
 			dependencies = (
 			);
 			name = SlimApp;
+			packageProductDependencies = (
+				DB68B70A2979A04C0065A368 /* Spidey */,
+			);
 			productName = SlimApp;
 			productReference = F20F2C69296DBBE300EADAE6 /* SlimApp.app */;
 			productType = "com.apple.product-type.application";
@@ -177,6 +182,9 @@
 				Base,
 			);
 			mainGroup = F20F2C60296DBBE300EADAE6;
+			packageReferences = (
+				DB68B7092979A04C0065A368 /* XCRemoteSwiftPackageReference "Spidey" */,
+			);
 			productRefGroup = F20F2C6A296DBBE300EADAE6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -439,6 +447,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB68B7092979A04C0065A368 /* XCRemoteSwiftPackageReference "Spidey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/inTheAM/Spidey";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB68B70A2979A04C0065A368 /* Spidey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB68B7092979A04C0065A368 /* XCRemoteSwiftPackageReference "Spidey" */;
+			productName = Spidey;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F20F2C61296DBBE300EADAE6 /* Project object */;
 }
