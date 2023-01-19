@@ -69,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				DB0DF452296F02F8001DAD3E /* DayPicker.swift */,
-				DB0DF455296F0325001DAD3E /* Weekday.swift */,
 			);
 			path = DayPicker;
 			sourceTree = "<group>";
@@ -90,6 +89,18 @@
 				9ECA5204297841D300D61F4E /* CustomColorPalette.swift */,
 			);
 			path = ClientList;
+			sourceTree = "<group>";
+		};
+		DB68B70C2979A3100065A368 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB0DF455296F0325001DAD3E /* Weekday.swift */,
+				F2B42BFF2979331800DB3721 /* Client.swift */,
+				F2B42C0529797F1000DB3721 /* Trainer.swift */,
+				F2B42C01297933E400DB3721 /* Sex.swift */,
+				F2B42C032979345400DB3721 /* WorkoutObjective.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F20F2C60296DBBE300EADAE6 = {
@@ -116,10 +127,7 @@
 				C19BD9B9296F02A00037B081 /* NewClient */,
 				DB0DF45B2971A44E001DAD3E /* ClientDetails */,
 				DB0DF454296F0303001DAD3E /* DayPicker */,
-				F2B42BFF2979331800DB3721 /* Client.swift */,
-				F2B42C0529797F1000DB3721 /* Trainer.swift */,
-				F2B42C01297933E400DB3721 /* Sex.swift */,
-				F2B42C032979345400DB3721 /* WorkoutObjective.swift */,
+				DB68B70C2979A3100065A368 /* Models */,
 				F20F2C70296DBBE400EADAE6 /* Assets.xcassets */,
 				F20F2C72296DBBE400EADAE6 /* Preview Content */,
 			);
