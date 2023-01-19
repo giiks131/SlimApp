@@ -8,26 +8,56 @@
 import SwiftUI
 
 struct ClientCard: View {
-    var name: String = "Antonio Ferrarissssss"
-    var nextTraining: String = "Today"
+    var clientName: String = "Antonio Ferraris"
     var body: some View {
-        HStack {
-            VStack(alignment: .leading) {
-                Text(name)
-                    .font(.system(size: 24, weight: .bold))
-                Text(nextTraining)
-                    .font(.system(size: 18, weight: .regular))
+        HStack(spacing: 0) {
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .frame(width: 61, height: 61, alignment: .center)
+                .padding()
+                .overlay {
+                    Image(systemName: "person.fill")
+                        .foregroundColor(.black.opacity(0.2))
+                        .font(.system(size: 50))
+                }
+            VStack(alignment: .leading, spacing: 4) {
+                Text(clientName)
+                    .font(.title2.bold())
+                HStack(spacing: 4) {
+                    Text("Muscle")
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                        .padding(.horizontal, 8)
+                        .background {
+                            RoundedRectangle(cornerRadius: 16)
+                        }
+                    Text("Weight-loss")
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                        .padding(.horizontal, 8)
+                        .background {
+                            RoundedRectangle(cornerRadius: 16)
+                        }
+                }
             }
             Spacer()
-            Divider()
-            // MARK: Test image, would be changed on client avatar
-            Image("4aces")
-                .resizable()
-                .scaledToFit()
+            ZStack {
+                Rectangle()
+                    .foregroundColor(Color.mainBlack)
+                    .frame(width: 80)
+                VStack {
+                    HStack(alignment: .lastTextBaseline, spacing: 0) {
+                        Text("12")
+                            .font(.title.bold())
+                        Text("JAN")
+                            .font(.subheadline)
+                    }
+                    Text("16:00")
+                        .font(.title3.bold())
+                }
+            }
         }
-        .padding()
-        .frame(maxHeight: 110)
-        .background(.purple)
+        .frame(width: 370, height: 100)
+        .background(Color.mainTeal)
         .cornerRadius(28)
         .foregroundColor(.white)
     }

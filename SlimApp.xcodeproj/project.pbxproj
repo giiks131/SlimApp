@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9E99977C296F030E00AA184B /* ClientDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E99977B296F030E00AA184B /* ClientDetailsView.swift */; };
+		9ECA5205297841D300D61F4E /* CustomColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECA5204297841D300D61F4E /* CustomColorPalette.swift */; };
 		C19BD9BB296F02D80037B081 /* NewClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19BD9BA296F02D80037B081 /* NewClientView.swift */; };
 		C19BD9BD296F06BE0037B081 /* NewClientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19BD9BC296F06BE0037B081 /* NewClientViewModel.swift */; };
 		DB0DF453296F02F8001DAD3E /* DayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0DF452296F02F8001DAD3E /* DayPicker.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		9E99977B296F030E00AA184B /* ClientDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDetailsView.swift; sourceTree = "<group>"; };
+		9ECA5204297841D300D61F4E /* CustomColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorPalette.swift; sourceTree = "<group>"; };
 		C19BD9BA296F02D80037B081 /* NewClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientView.swift; sourceTree = "<group>"; };
 		C19BD9BC296F06BE0037B081 /* NewClientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientViewModel.swift; sourceTree = "<group>"; };
 		DB0DF452296F02F8001DAD3E /* DayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPicker.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			children = (
 				F20F2C7A296DBD6D00EADAE6 /* ClientCard.swift */,
 				F20F2C6E296DBBE300EADAE6 /* HomeView.swift */,
+				9ECA5204297841D300D61F4E /* CustomColorPalette.swift */,
 			);
 			path = ClientList;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				DB0DF45829706EA9001DAD3E /* HomeView.swift in Sources */,
 				F20F2C7B296DBD6D00EADAE6 /* ClientCard.swift in Sources */,
 				DB0DF453296F02F8001DAD3E /* DayPicker.swift in Sources */,
+				9ECA5205297841D300D61F4E /* CustomColorPalette.swift in Sources */,
 				C19BD9BD296F06BE0037B081 /* NewClientViewModel.swift in Sources */,
 				C19BD9BB296F02D80037B081 /* NewClientView.swift in Sources */,
 				DB0DF456296F0325001DAD3E /* Weekday.swift in Sources */,
