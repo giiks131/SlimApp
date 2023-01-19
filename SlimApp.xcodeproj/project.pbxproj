@@ -18,6 +18,10 @@
 		F20F2C71296DBBE400EADAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20F2C70296DBBE400EADAE6 /* Assets.xcassets */; };
 		F20F2C74296DBBE400EADAE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20F2C73296DBBE400EADAE6 /* Preview Assets.xcassets */; };
 		F20F2C7B296DBD6D00EADAE6 /* ClientCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F2C7A296DBD6D00EADAE6 /* ClientCard.swift */; };
+		F2B42C002979331800DB3721 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B42BFF2979331800DB3721 /* Client.swift */; };
+		F2B42C02297933E400DB3721 /* Sex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B42C01297933E400DB3721 /* Sex.swift */; };
+		F2B42C042979345400DB3721 /* WorkoutObjective.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B42C032979345400DB3721 /* WorkoutObjective.swift */; };
+		F2B42C0629797F1000DB3721 /* Trainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B42C0529797F1000DB3721 /* Trainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		F20F2C70296DBBE400EADAE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F20F2C73296DBBE400EADAE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F20F2C7A296DBD6D00EADAE6 /* ClientCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCard.swift; sourceTree = "<group>"; };
+		F2B42BFF2979331800DB3721 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		F2B42C01297933E400DB3721 /* Sex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sex.swift; sourceTree = "<group>"; };
+		F2B42C032979345400DB3721 /* WorkoutObjective.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutObjective.swift; sourceTree = "<group>"; };
+		F2B42C0529797F1000DB3721 /* Trainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 				C19BD9B9296F02A00037B081 /* NewClient */,
 				DB0DF45B2971A44E001DAD3E /* ClientDetails */,
 				DB0DF454296F0303001DAD3E /* DayPicker */,
+				F2B42BFF2979331800DB3721 /* Client.swift */,
+				F2B42C0529797F1000DB3721 /* Trainer.swift */,
+				F2B42C01297933E400DB3721 /* Sex.swift */,
+				F2B42C032979345400DB3721 /* WorkoutObjective.swift */,
 				F20F2C70296DBBE400EADAE6 /* Assets.xcassets */,
 				F20F2C72296DBBE400EADAE6 /* Preview Content */,
 			);
@@ -212,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B42C02297933E400DB3721 /* Sex.swift in Sources */,
 				DB0DF45829706EA9001DAD3E /* HomeView.swift in Sources */,
 				F20F2C7B296DBD6D00EADAE6 /* ClientCard.swift in Sources */,
 				DB0DF453296F02F8001DAD3E /* DayPicker.swift in Sources */,
@@ -219,8 +232,11 @@
 				C19BD9BD296F06BE0037B081 /* NewClientViewModel.swift in Sources */,
 				C19BD9BB296F02D80037B081 /* NewClientView.swift in Sources */,
 				DB0DF456296F0325001DAD3E /* Weekday.swift in Sources */,
+				F2B42C042979345400DB3721 /* WorkoutObjective.swift in Sources */,
 				F20F2C6D296DBBE300EADAE6 /* SlimAppApp.swift in Sources */,
+				F2B42C0629797F1000DB3721 /* Trainer.swift in Sources */,
 				9E99977C296F030E00AA184B /* ClientDetailsView.swift in Sources */,
+				F2B42C002979331800DB3721 /* Client.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
