@@ -23,6 +23,11 @@ struct NewClientView: View {
             Form {
                 Section {
                     TextField("Name", text: $viewModel.name)
+                    Picker("Select sex", selection: $viewModel.sex) {
+                        ForEach(Sex.allCases, id: \.self) { sex in
+                            Text(sex.rawValue)
+                        }
+                    }
                     Picker("Select an avatar", selection: $viewModel.avatar) {
                         ForEach(emojis, id: \.self) { emoji in
                             Text(emoji)
