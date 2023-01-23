@@ -9,7 +9,6 @@ import SwiftUI
 
 struct NewClientView: View {
     @StateObject var viewModel: NewClientViewModel
-    @State var choosenAvatar: String = ""
     let emojis = ["😀", "😎", "🥰", "😴", "🤔", "🤯"]
 
     var body: some View {
@@ -18,18 +17,17 @@ struct NewClientView: View {
             Form {
                 Section {
                     TextField("Name", text: $viewModel.name)
-                    Picker("Select an avatar", selection: $choosenAvatar) {
+                    Picker("Select an avatar", selection: $viewModel.avatar) {
                         ForEach(emojis, id: \.self) { emoji in
                             Text(emoji)
                         }
-                        
                     }
                 }
                 Section {
-                    TextField("Height", text: $viewModel.height)
-                        .keyboardType(.decimalPad)
-                    TextField("Weight", text: $viewModel.weight)
-                        .keyboardType(.numberPad)
+                    TextField("Select Weight", value: $viewModel.weight, formatter: NumberFormatter())
+                        .keyboardType(.numbersAndPunctuation)
+                    TextField("Select Weight", value: $viewModel.weight, formatter: NumberFormatter())
+                        .keyboardType(.numbersAndPunctuation)
                 }
                 Section {
                     DayPicker(days: $viewModel.workoutDays)
@@ -37,7 +35,7 @@ struct NewClientView: View {
                         .listRowInsets(EdgeInsets(top: 4, leading: 4, bottom: 4, trailing: 4))
                 }
                 Button {
-                    #warning("Implement saving client information")
+#warning("Implement saving client information")
                 } label: {
                     Text("Save")
                         .frame(width: UIScreen.main.bounds.width)
