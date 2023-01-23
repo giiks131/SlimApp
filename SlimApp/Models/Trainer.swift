@@ -12,12 +12,10 @@ struct Trainer: Codable, Identifiable {
     let name: String
     let email: String
     let token: String
-    let clients: [Client]
-
 }
 
 extension Trainer {
-    struct New: Encodable{
+    struct New: Encodable {
         let name: String
         let email: String
         let password: String
