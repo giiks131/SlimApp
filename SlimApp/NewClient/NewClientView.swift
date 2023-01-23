@@ -9,17 +9,21 @@ import SwiftUI
 
 struct NewClientView: View {
     @StateObject var viewModel: NewClientViewModel
+    @State var choosenAvatar: String = ""
+    let emojis = ["😀", "😎", "🥰", "😴", "🤔", "🤯"]
+
     var body: some View {
         NavigationView {
             // TODO: e.grishina rewrite it with ScrollView
             Form {
                 Section {
                     TextField("Name", text: $viewModel.name)
-                    TextField("Surname", text: $viewModel.surname)
-                    TextField("E-mail", text: $viewModel.email)
-                        .keyboardType(.emailAddress)
-                    TextField("Phone number", text: $viewModel.phoneNumber)
-                        .keyboardType(.phonePad)
+                    Picker("Select an avatar", selection: $choosenAvatar) {
+                        ForEach(emojis, id: \.self) { emoji in
+                            Text(emoji)
+                        }
+                        
+                    }
                 }
                 Section {
                     TextField("Height", text: $viewModel.height)
@@ -31,9 +35,6 @@ struct NewClientView: View {
                     DayPicker(days: $viewModel.workoutDays)
                         .buttonStyle(.borderless)
                         .listRowInsets(EdgeInsets(top: 4, leading: 4, bottom: 4, trailing: 4))
-                }
-                Section("Notes") {
-                    TextEditor(text: $viewModel.notes)
                 }
                 Button {
                     #warning("Implement saving client information")
