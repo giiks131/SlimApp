@@ -28,6 +28,15 @@ struct NewClientView: View {
                         .keyboardType(.numbersAndPunctuation)
                     TextField("Select Weight", value: $viewModel.weight, formatter: NumberFormatter())
                         .keyboardType(.numbersAndPunctuation)
+                    TextField("Insert BMI", value: $viewModel.bodyMassIndex, formatter: NumberFormatter())
+                        .keyboardType(.numbersAndPunctuation)
+                }
+                Section {
+                    Picker("Select a goal", selection: $viewModel.objectives) {
+                        ForEach(WorkoutObjective.allCases, id: \.self) { goal in
+                            Text(goal.rawValue)
+                        }
+                    }
                 }
                 Section {
                     DayPicker(days: $viewModel.workoutDays)
