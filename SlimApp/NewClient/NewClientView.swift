@@ -35,12 +35,28 @@ struct NewClientView: View {
                     }
                 }
                 Section {
-                    TextField("Select Weight", value: $viewModel.weight, formatter: NumberFormatter())
-                        .keyboardType(.numbersAndPunctuation)
-                    TextField("Select Weight", value: $viewModel.weight, formatter: NumberFormatter())
-                        .keyboardType(.numbersAndPunctuation)
-                    TextField("Insert BMI", value: $viewModel.bodyMassIndex, formatter: NumberFormatter())
-                        .keyboardType(.numbersAndPunctuation)
+                    HStack {
+                        Text("Weight (Kg)")
+                        TextField("0", value: $viewModel.weight, formatter: decimalFormatter)
+                            .keyboardType(.numbersAndPunctuation)
+                        Stepper("Insert Weight", value: $viewModel.weight, step: 0.5)
+                            .labelsHidden()
+                        
+                    }
+                    HStack {
+                        Text("Height (cm)")
+                        TextField("0", value: $viewModel.height, formatter: decimalFormatter)
+                            .keyboardType(.numbersAndPunctuation)
+                        Stepper("Insert Height", value: $viewModel.height, step: 10)
+                            .labelsHidden()
+                    }
+                    HStack {
+                        Text("BMI")
+                        TextField("0", value: $viewModel.bodyMassIndex, formatter: decimalFormatter)
+                            .keyboardType(.numbersAndPunctuation)
+                        Stepper("Insert BMI", value: $viewModel.bodyMassIndex, step: 0.5)
+                            .labelsHidden()
+                    }
                 }
                 Section {
                     Picker("Select a goal", selection: $viewModel.objectives) {
