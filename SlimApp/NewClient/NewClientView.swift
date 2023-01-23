@@ -10,7 +10,13 @@ import SwiftUI
 struct NewClientView: View {
     @StateObject var viewModel: NewClientViewModel
     let emojis = ["😀", "😎", "🥰", "😴", "🤔", "🤯"]
-
+    let decimalFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.allowsFloats = true
+        formatter.minimumFractionDigits = 0
+        formatter.maximumFractionDigits = 2
+        return formatter
+    }()
     var body: some View {
         NavigationView {
             // TODO: e.grishina rewrite it with ScrollView
