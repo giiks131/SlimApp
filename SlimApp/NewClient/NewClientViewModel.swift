@@ -8,12 +8,14 @@
 import Foundation
 
 final class NewClientViewModel: ObservableObject {
+    
     @Published var name: String = ""
-    @Published var surname: String = ""
-    @Published var email: String = ""
-    @Published var phoneNumber: String = ""
-    @Published var height: String = ""
-    @Published var weight: String = ""
-    @Published var notes: String = ""
+    @Published var avatar: String = ""
+    @Published var sex: Sex = .male
+    @Published var height: Double = 0.0
+    @Published var weight: Double = 0.0
+    @Published var bodyMassIndex: Double = 0.0
     @Published var workoutDays: [Weekday] = []
+    @Published var objectives: [WorkoutObjective] = []
+    
 }
