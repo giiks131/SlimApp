@@ -7,12 +7,11 @@
 
 import Foundation
 
-struct BMICalculator {
-    let BMIweight: Double
-    let BMIheight: Double
-    var BMIValue: Double {
-        let powHeight = pow(BMIheight, 2)
-        let result = BMIweight / powHeight
+enum BMICalculator {
+    static func calculate(fromHeight height: Double, weight: Double) -> Double {
+        let powHeight = pow(height, 2)
+        let result = weight / powHeight
         return result
     }
 }
+

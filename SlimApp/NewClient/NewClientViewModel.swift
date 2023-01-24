@@ -17,5 +17,7 @@ final class NewClientViewModel: ObservableObject {
     @Published var bodyMassIndex: Double = 0.0
     @Published var workoutDays: [Weekday] = []
     @Published var objectives: [WorkoutObjective] = []
-    
+    var bmiValue: Double {
+        BMICalculator.calculate(fromHeight: height, weight: weight)
+    }
 }
