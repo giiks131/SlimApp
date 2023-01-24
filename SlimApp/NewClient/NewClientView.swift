@@ -16,6 +16,7 @@ struct NewClientView: View {
         formatter.allowsFloats = true
         formatter.minimumFractionDigits = 0
         formatter.maximumFractionDigits = 2
+        formatter.minimum = 0
         return formatter
     }()
     var body: some View {
@@ -35,25 +36,23 @@ struct NewClientView: View {
                         }
                     }
                 }
-                Section {
+                Section("Weight (kg)") {
                     HStack {
-                        Text("Weight (Kg)")
                         TextField("0", value: $viewModel.weight, formatter: decimalFormatter, onEditingChanged: { isEditing in
                             self.isEditing = isEditing
                         })
-                            .keyboardType(.numbersAndPunctuation)
-                        Stepper("Insert Weight", value: $viewModel.weight, step: 1)
-                            .labelsHidden()
+                        .keyboardType(.numbersAndPunctuation)
                     }
+                }
+                Section("Height (cm)") {
                     HStack {
-                        Text("Height (cm)")
                         TextField("0", value: $viewModel.height, formatter: decimalFormatter, onEditingChanged: { isEditing in
                             self.isEditing = isEditing
                         })
-                            .keyboardType(.numbersAndPunctuation)
-                        Stepper("Insert Height", value: $viewModel.height, step: 10)
-                            .labelsHidden()
+                        .keyboardType(.numbersAndPunctuation)
                     }
+                }
+                Section {
                     HStack {
                         Text("BMI")
                         Text((viewModel.weight != 0 && viewModel.height != 0) && isEditing == false ? String(format: "%.2f", viewModel.bmiValue) : "0.0")
