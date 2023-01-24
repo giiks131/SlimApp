@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E948EF0298021AC00174C0E /* BMICalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E948EEF298021AC00174C0E /* BMICalculator.swift */; };
 		9E99977C296F030E00AA184B /* ClientDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E99977B296F030E00AA184B /* ClientDetailsView.swift */; };
 		9ECA5205297841D300D61F4E /* CustomColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECA5204297841D300D61F4E /* CustomColorPalette.swift */; };
 		C19BD9BB296F02D80037B081 /* NewClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19BD9BA296F02D80037B081 /* NewClientView.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E948EEF298021AC00174C0E /* BMICalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculator.swift; sourceTree = "<group>"; };
 		9E99977B296F030E00AA184B /* ClientDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDetailsView.swift; sourceTree = "<group>"; };
 		9ECA5204297841D300D61F4E /* CustomColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorPalette.swift; sourceTree = "<group>"; };
 		C19BD9BA296F02D80037B081 /* NewClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			children = (
 				C19BD9BA296F02D80037B081 /* NewClientView.swift */,
 				C19BD9BC296F06BE0037B081 /* NewClientViewModel.swift */,
+				9E948EEF298021AC00174C0E /* BMICalculator.swift */,
 			);
 			path = NewClient;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			files = (
 				F2B42C02297933E400DB3721 /* Sex.swift in Sources */,
 				DB0DF45829706EA9001DAD3E /* HomeView.swift in Sources */,
+				9E948EF0298021AC00174C0E /* BMICalculator.swift in Sources */,
 				F20F2C7B296DBD6D00EADAE6 /* ClientCard.swift in Sources */,
 				DB0DF453296F02F8001DAD3E /* DayPicker.swift in Sources */,
 				9ECA5205297841D300D61F4E /* CustomColorPalette.swift in Sources */,
