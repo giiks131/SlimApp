@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NewClientView: View {
     @StateObject var viewModel: NewClientViewModel
+    @State private var isEditing = false
     let emojis = ["😀", "😎", "🥰", "😴", "🤔", "🤯"]
     let decimalFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
@@ -37,21 +38,25 @@ struct NewClientView: View {
                 Section {
                     HStack {
                         Text("Weight (Kg)")
-                        TextField("0", value: $viewModel.weight, formatter: decimalFormatter)
+                        TextField("0", value: $viewModel.weight, formatter: decimalFormatter, onEditingChanged: { isEditing in
+                            self.isEditing = isEditing
+                        })
                             .keyboardType(.numbersAndPunctuation)
                         Stepper("Insert Weight", value: $viewModel.weight, step: 1)
                             .labelsHidden()
                     }
                     HStack {
                         Text("Height (cm)")
-                        TextField("0", value: $viewModel.height, formatter: decimalFormatter)
+                        TextField("0", value: $viewModel.height, formatter: decimalFormatter, onEditingChanged: { isEditing in
+                            self.isEditing = isEditing
+                        })
                             .keyboardType(.numbersAndPunctuation)
                         Stepper("Insert Height", value: $viewModel.height, step: 10)
                             .labelsHidden()
                     }
                     HStack {
                         Text("BMI")
-                        Text("\(viewModel.bmiValue)")
+                        Text((viewModel.weight != 0 && viewModel.height != 0) && isEditing == false ? String(format: "%.2f", viewModel.bmiValue) : "0.0")
                     }
                 }
                 Section {
