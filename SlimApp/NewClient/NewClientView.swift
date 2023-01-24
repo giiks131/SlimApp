@@ -51,10 +51,7 @@ struct NewClientView: View {
                     }
                     HStack {
                         Text("BMI")
-                        TextField("0", value: $viewModel.bodyMassIndex, formatter: decimalFormatter)
-                            .keyboardType(.numbersAndPunctuation)
-                        Stepper("Insert BMI", value: $viewModel.bodyMassIndex, step: 0.5)
-                            .labelsHidden()
+                        Text("\(viewModel.bmiValue)")
                     }
                 }
                 Section {
