@@ -39,9 +39,8 @@ struct NewClientView: View {
                         Text("Weight (Kg)")
                         TextField("0", value: $viewModel.weight, formatter: decimalFormatter)
                             .keyboardType(.numbersAndPunctuation)
-                        Stepper("Insert Weight", value: $viewModel.weight, step: 0.5)
+                        Stepper("Insert Weight", value: $viewModel.weight, step: 1)
                             .labelsHidden()
-                        
                     }
                     HStack {
                         Text("Height (cm)")
