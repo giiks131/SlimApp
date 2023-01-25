@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9E948EF0298021AC00174C0E /* BMICalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E948EEF298021AC00174C0E /* BMICalculator.swift */; };
+		9E948EF82981633C00174C0E /* SlimAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E948EF72981633C00174C0E /* SlimAppTests.swift */; };
 		9E99977C296F030E00AA184B /* ClientDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E99977B296F030E00AA184B /* ClientDetailsView.swift */; };
 		9ECA5205297841D300D61F4E /* CustomColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECA5204297841D300D61F4E /* CustomColorPalette.swift */; };
 		C19BD9BB296F02D80037B081 /* NewClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19BD9BA296F02D80037B081 /* NewClientView.swift */; };
@@ -25,8 +26,20 @@
 		F2B42C0629797F1000DB3721 /* Trainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B42C0529797F1000DB3721 /* Trainer.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9E948EF92981633C00174C0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F20F2C61296DBBE300EADAE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F20F2C68296DBBE300EADAE6;
+			remoteInfo = SlimApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		9E948EEF298021AC00174C0E /* BMICalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculator.swift; sourceTree = "<group>"; };
+		9E948EF52981633C00174C0E /* SlimAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlimAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E948EF72981633C00174C0E /* SlimAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlimAppTests.swift; sourceTree = "<group>"; };
 		9E99977B296F030E00AA184B /* ClientDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDetailsView.swift; sourceTree = "<group>"; };
 		9ECA5204297841D300D61F4E /* CustomColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorPalette.swift; sourceTree = "<group>"; };
 		C19BD9BA296F02D80037B081 /* NewClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientView.swift; sourceTree = "<group>"; };
@@ -46,6 +59,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9E948EF22981633C00174C0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F20F2C66296DBBE300EADAE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E948EF62981633C00174C0E /* SlimAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E948EF72981633C00174C0E /* SlimAppTests.swift */,
+			);
+			path = SlimAppTests;
+			sourceTree = "<group>";
+		};
 		C19BD9B9296F02A00037B081 /* NewClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				F20F2C6B296DBBE300EADAE6 /* SlimApp */,
+				9E948EF62981633C00174C0E /* SlimAppTests */,
 				F20F2C6A296DBBE300EADAE6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				F20F2C69296DBBE300EADAE6 /* SlimApp.app */,
+				9E948EF52981633C00174C0E /* SlimAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +168,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9E948EF42981633C00174C0E /* SlimAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E948EFB2981633C00174C0E /* Build configuration list for PBXNativeTarget "SlimAppTests" */;
+			buildPhases = (
+				9E948EF12981633C00174C0E /* Sources */,
+				9E948EF22981633C00174C0E /* Frameworks */,
+				9E948EF32981633C00174C0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E948EFA2981633C00174C0E /* PBXTargetDependency */,
+			);
+			name = SlimAppTests;
+			productName = SlimAppTests;
+			productReference = 9E948EF52981633C00174C0E /* SlimAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F20F2C68296DBBE300EADAE6 /* SlimApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F20F2C77296DBBE400EADAE6 /* Build configuration list for PBXNativeTarget "SlimApp" */;
@@ -166,6 +214,10 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					9E948EF42981633C00174C0E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F20F2C68296DBBE300EADAE6;
+					};
 					F20F2C68296DBBE300EADAE6 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -185,11 +237,19 @@
 			projectRoot = "";
 			targets = (
 				F20F2C68296DBBE300EADAE6 /* SlimApp */,
+				9E948EF42981633C00174C0E /* SlimAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9E948EF32981633C00174C0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F20F2C67296DBBE300EADAE6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,6 +283,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9E948EF12981633C00174C0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E948EF82981633C00174C0E /* SlimAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F20F2C65296DBBE300EADAE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,7 +314,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9E948EFA2981633C00174C0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F20F2C68296DBBE300EADAE6 /* SlimApp */;
+			targetProxy = 9E948EF92981633C00174C0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		9E948EFC2981633C00174C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = antoniopalomba.SlimAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlimApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SlimApp";
+			};
+			name = Debug;
+		};
+		9E948EFD2981633C00174C0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = antoniopalomba.SlimAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlimApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SlimApp";
+			};
+			name = Release;
+		};
 		F20F2C75296DBBE400EADAE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -424,6 +534,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9E948EFB2981633C00174C0E /* Build configuration list for PBXNativeTarget "SlimAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E948EFC2981633C00174C0E /* Debug */,
+				9E948EFD2981633C00174C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F20F2C64296DBBE300EADAE6 /* Build configuration list for PBXProject "SlimApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
