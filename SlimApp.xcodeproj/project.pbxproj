@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9E948EF0298021AC00174C0E /* BMICalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E948EEF298021AC00174C0E /* BMICalculator.swift */; };
-		9E948EF82981633C00174C0E /* SlimAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E948EF72981633C00174C0E /* SlimAppTests.swift */; };
+		9E948EF82981633C00174C0E /* NewClientViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E948EF72981633C00174C0E /* NewClientViewModelTests.swift */; };
 		9E99977C296F030E00AA184B /* ClientDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E99977B296F030E00AA184B /* ClientDetailsView.swift */; };
 		9ECA5205297841D300D61F4E /* CustomColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECA5204297841D300D61F4E /* CustomColorPalette.swift */; };
 		C19BD9BB296F02D80037B081 /* NewClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19BD9BA296F02D80037B081 /* NewClientView.swift */; };
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		9E948EEF298021AC00174C0E /* BMICalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculator.swift; sourceTree = "<group>"; };
 		9E948EF52981633C00174C0E /* SlimAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlimAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E948EF72981633C00174C0E /* SlimAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlimAppTests.swift; sourceTree = "<group>"; };
+		9E948EF72981633C00174C0E /* NewClientViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientViewModelTests.swift; sourceTree = "<group>"; };
 		9E99977B296F030E00AA184B /* ClientDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDetailsView.swift; sourceTree = "<group>"; };
 		9ECA5204297841D300D61F4E /* CustomColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorPalette.swift; sourceTree = "<group>"; };
 		C19BD9BA296F02D80037B081 /* NewClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientView.swift; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		9E948EF62981633C00174C0E /* SlimAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				9E948EF72981633C00174C0E /* SlimAppTests.swift */,
+				9E948EF72981633C00174C0E /* NewClientViewModelTests.swift */,
 			);
 			path = SlimAppTests;
 			sourceTree = "<group>";
@@ -287,7 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E948EF82981633C00174C0E /* SlimAppTests.swift in Sources */,
+				9E948EF82981633C00174C0E /* NewClientViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
