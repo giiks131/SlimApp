@@ -12,7 +12,7 @@ struct Trainer: Codable, Identifiable {
     let name: String
     let email: String
     let token: String
-    let clients: [Client]
+//    let clients: [Client]
 
 }
 

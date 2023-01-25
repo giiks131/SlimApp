@@ -55,7 +55,7 @@ struct NewClientView: View {
                 Section {
                     HStack {
                         Text("BMI")
-                        Text((viewModel.weight != 0 && viewModel.height != 0) && isEditing == false ? String(format: "%.2f", viewModel.bmiValue) : "0.0")
+                        Text("\(viewModel.bmiValue)")
                     }
                 }
                 Section {
