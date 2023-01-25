@@ -20,8 +20,8 @@ final class NewClientViewModelTests: XCTestCase {
     }
 
     func testBMIValueUpdatesOnChangeOfWeightHeight() throws {
-        viewModel.height = 180.00
-        viewModel.weight = 67
+        viewModel.height = "180.00"
+        viewModel.weight = "67"
         XCTAssert(viewModel.bmiValue != 0)
     }
 

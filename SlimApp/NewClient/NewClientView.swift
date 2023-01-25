@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NewClientView: View {
-    @StateObject var viewModel: NewClientViewModel
+    @StateObject private var viewModel: NewClientViewModel = NewClientViewModel()
     let emojis = ["😀", "😎", "🥰", "😴", "🤔", "🤯"]
     var body: some View {
         NavigationView {
@@ -28,11 +28,11 @@ struct NewClientView: View {
                     }
                 }
                 Section("Weight (kg)") {
-                    TextField("0", text: $viewModel.height)
+                    TextField("0", text: $viewModel.weight)
                         .keyboardType(.numbersAndPunctuation)
                 }
                 Section("Height (cm)") {
-                    TextField("0", text: $viewModel.weight)
+                    TextField("0", text: $viewModel.height)
                         .keyboardType(.numbersAndPunctuation)
                 }
                 Section {
@@ -68,6 +68,6 @@ struct NewClientView: View {
 
 struct NewClientView_Previews: PreviewProvider {
     static var previews: some View {
-        NewClientView(viewModel: NewClientViewModel(height: "187", weight: "67"))
+        NewClientView()
     }
 }

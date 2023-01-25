@@ -28,6 +28,7 @@ struct HomeView: View {
                 }
                 .sheet(isPresented: $isShowingSheet) {
                     // MARK: View with new client info
+                    NewClientView()
                 }
             }
         }
