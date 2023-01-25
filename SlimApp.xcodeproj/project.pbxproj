@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9E948EF0298021AC00174C0E /* BMICalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E948EEF298021AC00174C0E /* BMICalculator.swift */; };
 		9E948EF82981633C00174C0E /* NewClientViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E948EF72981633C00174C0E /* NewClientViewModelTests.swift */; };
+		9E948F0B29818B4100174C0E /* BMICalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E948F04298186D200174C0E /* BMICalculatorTests.swift */; };
 		9E99977C296F030E00AA184B /* ClientDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E99977B296F030E00AA184B /* ClientDetailsView.swift */; };
 		9ECA5205297841D300D61F4E /* CustomColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECA5204297841D300D61F4E /* CustomColorPalette.swift */; };
 		C19BD9BB296F02D80037B081 /* NewClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19BD9BA296F02D80037B081 /* NewClientView.swift */; };
@@ -34,12 +35,21 @@
 			remoteGlobalIDString = F20F2C68296DBBE300EADAE6;
 			remoteInfo = SlimApp;
 		};
+		9E948F06298186D200174C0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F20F2C61296DBBE300EADAE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F20F2C68296DBBE300EADAE6;
+			remoteInfo = SlimApp;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9E948EEF298021AC00174C0E /* BMICalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculator.swift; sourceTree = "<group>"; };
 		9E948EF52981633C00174C0E /* SlimAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlimAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E948EF72981633C00174C0E /* NewClientViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientViewModelTests.swift; sourceTree = "<group>"; };
+		9E948F02298186D200174C0E /* BMICalculator.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMICalculator.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E948F04298186D200174C0E /* BMICalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculatorTests.swift; sourceTree = "<group>"; };
 		9E99977B296F030E00AA184B /* ClientDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDetailsView.swift; sourceTree = "<group>"; };
 		9ECA5204297841D300D61F4E /* CustomColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorPalette.swift; sourceTree = "<group>"; };
 		C19BD9BA296F02D80037B081 /* NewClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientView.swift; sourceTree = "<group>"; };
@@ -66,6 +76,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9E948EFF298186D200174C0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F20F2C66296DBBE300EADAE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				9E948EF72981633C00174C0E /* NewClientViewModelTests.swift */,
+				9E948F04298186D200174C0E /* BMICalculatorTests.swift */,
 			);
 			path = SlimAppTests;
 			sourceTree = "<group>";
@@ -135,6 +153,7 @@
 			children = (
 				F20F2C69296DBBE300EADAE6 /* SlimApp.app */,
 				9E948EF52981633C00174C0E /* SlimAppTests.xctest */,
+				9E948F02298186D200174C0E /* BMICalculator.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +205,24 @@
 			productReference = 9E948EF52981633C00174C0E /* SlimAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9E948F01298186D200174C0E /* BMICalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E948F08298186D200174C0E /* Build configuration list for PBXNativeTarget "BMICalculator" */;
+			buildPhases = (
+				9E948EFE298186D200174C0E /* Sources */,
+				9E948EFF298186D200174C0E /* Frameworks */,
+				9E948F00298186D200174C0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E948F07298186D200174C0E /* PBXTargetDependency */,
+			);
+			name = BMICalculator;
+			productName = BMICalculator;
+			productReference = 9E948F02298186D200174C0E /* BMICalculator.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F20F2C68296DBBE300EADAE6 /* SlimApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F20F2C77296DBBE400EADAE6 /* Build configuration list for PBXNativeTarget "SlimApp" */;
@@ -218,6 +255,10 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = F20F2C68296DBBE300EADAE6;
 					};
+					9E948F01298186D200174C0E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F20F2C68296DBBE300EADAE6;
+					};
 					F20F2C68296DBBE300EADAE6 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -238,12 +279,20 @@
 			targets = (
 				F20F2C68296DBBE300EADAE6 /* SlimApp */,
 				9E948EF42981633C00174C0E /* SlimAppTests */,
+				9E948F01298186D200174C0E /* BMICalculator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9E948EF32981633C00174C0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E948F00298186D200174C0E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -287,7 +336,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E948F0B29818B4100174C0E /* BMICalculatorTests.swift in Sources */,
 				9E948EF82981633C00174C0E /* NewClientViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E948EFE298186D200174C0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +377,11 @@
 			target = F20F2C68296DBBE300EADAE6 /* SlimApp */;
 			targetProxy = 9E948EF92981633C00174C0E /* PBXContainerItemProxy */;
 		};
+		9E948F07298186D200174C0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F20F2C68296DBBE300EADAE6 /* SlimApp */;
+			targetProxy = 9E948F06298186D200174C0E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -349,6 +411,40 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = antoniopalomba.SlimAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlimApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SlimApp";
+			};
+			name = Release;
+		};
+		9E948F09298186D200174C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = antoniopalomba.BMICalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlimApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SlimApp";
+			};
+			name = Debug;
+		};
+		9E948F0A298186D200174C0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = antoniopalomba.BMICalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -539,6 +635,15 @@
 			buildConfigurations = (
 				9E948EFC2981633C00174C0E /* Debug */,
 				9E948EFD2981633C00174C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E948F08298186D200174C0E /* Build configuration list for PBXNativeTarget "BMICalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E948F09298186D200174C0E /* Debug */,
+				9E948F0A298186D200174C0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
