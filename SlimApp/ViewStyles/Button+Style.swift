@@ -13,7 +13,8 @@ struct LargeButtonStyle: ButtonStyle {
             .bold()
             .frame(maxWidth: .infinity)
             .padding()
-            .background(.gray) // TODO: change color
+            .foregroundColor(.white)
+            .background(Color.mainTeal)
             .cornerRadius(16)
     }
 }

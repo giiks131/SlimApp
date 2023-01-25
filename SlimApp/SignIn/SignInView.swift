@@ -14,18 +14,10 @@ struct SignInView: View {
     var body: some View {
         VStack {
             TextField("", text: $viewModel.email, prompt: Text("Email"))
-                .padding()
-                .overlay(
-                    RoundedRectangle(cornerRadius: 15)
-                        .stroke(.black, lineWidth: 1)
-                )
-            TextField("", text: $viewModel.password, prompt: Text("Password"))
-                .padding()
-                .overlay(
-                    RoundedRectangle(cornerRadius: 15)
-                        .stroke(.black, lineWidth: 1)
-                )
-                .padding([.top], 16)
+                .textFieldStyle(BorderedTextFieldStyle())
+            SecureField("", text: $viewModel.password, prompt: Text("Password"))
+                .textFieldStyle(BorderedTextFieldStyle())
+                .padding(.top, 16)
             HStack {
                 Text("Don't have an account?")
                     .foregroundColor(.gray)
@@ -37,7 +29,7 @@ struct SignInView: View {
                         .foregroundColor(.blue)
                 }
             }
-            .padding([.top])
+            .padding(.vertical)
 
             Button {
                 viewModel.doSignIn()
@@ -45,7 +37,7 @@ struct SignInView: View {
                 Text("Sign in")
             }
             .buttonStyle(LargeButtonStyle())
-            .padding([.top])
+            .padding(.top)
         }
         .padding()
     }

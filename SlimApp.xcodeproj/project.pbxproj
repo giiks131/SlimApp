@@ -14,6 +14,9 @@
 		C1DE432D2980374A00760170 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE432C2980374A00760170 /* SignInView.swift */; };
 		C1DE432F29803AA100760170 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE432E29803AA100760170 /* SignInViewModel.swift */; };
 		C1DE433129815A6300760170 /* Button+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE433029815A6300760170 /* Button+Style.swift */; };
+		C1DE433429815D2200760170 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE433329815D2200760170 /* SignUpView.swift */; };
+		C1DE433629815D2E00760170 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE433529815D2E00760170 /* SignUpViewModel.swift */; };
+		C1DE433929815F2700760170 /* BorderedTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE433829815F2700760170 /* BorderedTextFieldStyle.swift */; };
 		DB0DF453296F02F8001DAD3E /* DayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0DF452296F02F8001DAD3E /* DayPicker.swift */; };
 		DB0DF456296F0325001DAD3E /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0DF455296F0325001DAD3E /* Weekday.swift */; };
 		DB0DF45829706EA9001DAD3E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F2C6E296DBBE300EADAE6 /* HomeView.swift */; };
@@ -35,6 +38,9 @@
 		C1DE432C2980374A00760170 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		C1DE432E29803AA100760170 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		C1DE433029815A6300760170 /* Button+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Style.swift"; sourceTree = "<group>"; };
+		C1DE433329815D2200760170 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		C1DE433529815D2E00760170 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		C1DE433829815F2700760170 /* BorderedTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedTextFieldStyle.swift; sourceTree = "<group>"; };
 		DB0DF452296F02F8001DAD3E /* DayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPicker.swift; sourceTree = "<group>"; };
 		DB0DF455296F0325001DAD3E /* Weekday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weekday.swift; sourceTree = "<group>"; };
 		F20F2C69296DBBE300EADAE6 /* SlimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,9 +80,26 @@
 			children = (
 				C1DE432C2980374A00760170 /* SignInView.swift */,
 				C1DE432E29803AA100760170 /* SignInViewModel.swift */,
-				C1DE433029815A6300760170 /* Button+Style.swift */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		C1DE433229815D0800760170 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				C1DE433329815D2200760170 /* SignUpView.swift */,
+				C1DE433529815D2E00760170 /* SignUpViewModel.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		C1DE433729815EFC00760170 /* ViewStyles */ = {
+			isa = PBXGroup;
+			children = (
+				C1DE433829815F2700760170 /* BorderedTextFieldStyle.swift */,
+				C1DE433029815A6300760170 /* Button+Style.swift */,
+			);
+			path = ViewStyles;
 			sourceTree = "<group>";
 		};
 		DB0DF454296F0303001DAD3E /* DayPicker */ = {
@@ -125,6 +148,8 @@
 		F20F2C6B296DBBE300EADAE6 /* SlimApp */ = {
 			isa = PBXGroup;
 			children = (
+				C1DE433729815EFC00760170 /* ViewStyles */,
+				C1DE433229815D0800760170 /* SignUp */,
 				C1DE432B298036A800760170 /* SignIn */,
 				F20F2C6C296DBBE300EADAE6 /* SlimAppApp.swift */,
 				DB0DF45C2971A457001DAD3E /* ClientList */,
@@ -245,14 +270,17 @@
 				DB0DF45829706EA9001DAD3E /* HomeView.swift in Sources */,
 				F20F2C7B296DBD6D00EADAE6 /* ClientCard.swift in Sources */,
 				DB0DF453296F02F8001DAD3E /* DayPicker.swift in Sources */,
+				C1DE433629815D2E00760170 /* SignUpViewModel.swift in Sources */,
 				9ECA5205297841D300D61F4E /* CustomColorPalette.swift in Sources */,
 				C1DE433129815A6300760170 /* Button+Style.swift in Sources */,
 				C19BD9BD296F06BE0037B081 /* NewClientViewModel.swift in Sources */,
+				C1DE433929815F2700760170 /* BorderedTextFieldStyle.swift in Sources */,
 				C19BD9BB296F02D80037B081 /* NewClientView.swift in Sources */,
 				DB0DF456296F0325001DAD3E /* Weekday.swift in Sources */,
 				C1DE432D2980374A00760170 /* SignInView.swift in Sources */,
 				F2B42C042979345400DB3721 /* WorkoutObjective.swift in Sources */,
 				F20F2C6D296DBBE300EADAE6 /* SlimAppApp.swift in Sources */,
+				C1DE433429815D2200760170 /* SignUpView.swift in Sources */,
 				F2B42C0629797F1000DB3721 /* Trainer.swift in Sources */,
 				9E99977C296F030E00AA184B /* ClientDetailsView.swift in Sources */,
 				F2B42C002979331800DB3721 /* Client.swift in Sources */,
