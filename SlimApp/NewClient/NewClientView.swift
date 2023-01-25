@@ -9,16 +9,7 @@ import SwiftUI
 
 struct NewClientView: View {
     @StateObject var viewModel: NewClientViewModel
-    @State private var isEditing = false
     let emojis = ["😀", "😎", "🥰", "😴", "🤔", "🤯"]
-    let decimalFormatter: NumberFormatter = {
-        let formatter = NumberFormatter()
-        formatter.allowsFloats = true
-        formatter.minimumFractionDigits = 0
-        formatter.maximumFractionDigits = 2
-        formatter.minimum = 0
-        return formatter
-    }()
     var body: some View {
         NavigationView {
             // TODO: e.grishina rewrite it with ScrollView
@@ -37,20 +28,12 @@ struct NewClientView: View {
                     }
                 }
                 Section("Weight (kg)") {
-                    HStack {
-                        TextField("0", value: $viewModel.weight, formatter: decimalFormatter, onEditingChanged: { isEditing in
-                            self.isEditing = isEditing
-                        })
+                    TextField("0", text: $viewModel.height)
                         .keyboardType(.numbersAndPunctuation)
-                    }
                 }
                 Section("Height (cm)") {
-                    HStack {
-                        TextField("0", value: $viewModel.height, formatter: decimalFormatter, onEditingChanged: { isEditing in
-                            self.isEditing = isEditing
-                        })
+                    TextField("0", text: $viewModel.weight)
                         .keyboardType(.numbersAndPunctuation)
-                    }
                 }
                 Section {
                     HStack {
@@ -85,6 +68,6 @@ struct NewClientView: View {
 
 struct NewClientView_Previews: PreviewProvider {
     static var previews: some View {
-        NewClientView(viewModel: NewClientViewModel())
+        NewClientView(viewModel: NewClientViewModel(height: "187", weight: "67"))
     }
 }
