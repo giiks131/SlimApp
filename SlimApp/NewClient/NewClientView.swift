@@ -8,35 +8,53 @@
 import SwiftUI
 
 struct NewClientView: View {
-    @StateObject var viewModel: NewClientViewModel
+    @StateObject private var viewModel: NewClientViewModel = NewClientViewModel()
+    let emojis = ["😀", "😎", "🥰", "😴", "🤔", "🤯"]
     var body: some View {
         NavigationView {
             // TODO: e.grishina rewrite it with ScrollView
             Form {
                 Section {
                     TextField("Name", text: $viewModel.name)
-                    TextField("Surname", text: $viewModel.surname)
-                    TextField("E-mail", text: $viewModel.email)
-                        .keyboardType(.emailAddress)
-                    TextField("Phone number", text: $viewModel.phoneNumber)
-                        .keyboardType(.phonePad)
+                    Picker("Select sex", selection: $viewModel.sex) {
+                        ForEach(Sex.allCases, id: \.self) { sex in
+                            Text(sex.rawValue)
+                        }
+                    }
+                    Picker("Select an avatar", selection: $viewModel.avatar) {
+                        ForEach(emojis, id: \.self) { emoji in
+                            Text(emoji)
+                        }
+                    }
+                }
+                Section("Weight (kg)") {
+                    TextField("0", text: $viewModel.weight)
+                        .keyboardType(.numbersAndPunctuation)
+                }
+                Section("Height (cm)") {
+                    TextField("0", text: $viewModel.height)
+                        .keyboardType(.numbersAndPunctuation)
                 }
                 Section {
-                    TextField("Height", text: $viewModel.height)
-                        .keyboardType(.decimalPad)
-                    TextField("Weight", text: $viewModel.weight)
-                        .keyboardType(.numberPad)
+                    HStack {
+                        Text("BMI")
+                        Text("\(viewModel.bmiValue)")
+                    }
+                }
+                Section {
+                    Picker("Select a goal", selection: $viewModel.objectives) {
+                        ForEach(WorkoutObjective.allCases, id: \.self) { goal in
+                            Text(goal.rawValue)
+                        }
+                    }
                 }
                 Section {
                     DayPicker(days: $viewModel.workoutDays)
                         .buttonStyle(.borderless)
                         .listRowInsets(EdgeInsets(top: 4, leading: 4, bottom: 4, trailing: 4))
                 }
-                Section("Notes") {
-                    TextEditor(text: $viewModel.notes)
-                }
                 Button {
-                    #warning("Implement saving client information")
+#warning("Implement saving client information")
                 } label: {
                     Text("Save")
                         .frame(width: UIScreen.main.bounds.width)
@@ -50,6 +68,6 @@ struct NewClientView: View {
 
 struct NewClientView_Previews: PreviewProvider {
     static var previews: some View {
-        NewClientView(viewModel: NewClientViewModel())
+        NewClientView()
     }
 }
