@@ -16,6 +16,7 @@ struct NewClientView: View {
             Form {
                 Section {
                     TextField("Name", text: $viewModel.name)
+                    DatePicker("Date of birth", selection: $viewModel.dateOfBirth, displayedComponents: .date)
                     Picker("Select sex", selection: $viewModel.sex) {
                         ForEach(Sex.allCases, id: \.self) { sex in
                             Text(sex.rawValue)
