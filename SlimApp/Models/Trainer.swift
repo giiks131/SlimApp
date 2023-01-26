@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct Trainer: Codable, Identifiable {
-    let id: UUID
+struct Trainer: Codable {
     let name: String
     let email: String
     let token: String
