@@ -21,7 +21,7 @@ final class NewClientViewModel: ObservableObject {
     @Published var sex: Sex = .male
     @Published var height: String = ""
     @Published var weight: String = ""
-    @Published var dateOfBirth: Date = Date(timeIntervalSince1970: 1640991600)
+    @Published var dateOfBirth: Date = Date(timeIntervalSince1970: 1672527600)
     @Published var bodyMassIndex: Double = 0.0
     @Published var workoutDays: [Weekday] = []
     @Published var objectives: [WorkoutObjective] = []
