@@ -56,10 +56,12 @@ final class NewClientViewModel: ObservableObject {
     }
 
     /// Adds the new client to the trainer's list using the service.
-    func addClient() async {
+    func addClient() {
         do {
             let client = try makeClient()
-            try await service.addNew(client: client)
+            Task {
+                try await service.addNew(client: client)
+            }
         } catch {
             print(error)
         }

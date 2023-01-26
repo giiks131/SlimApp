@@ -55,9 +55,7 @@ struct NewClientView: View {
                         .listRowInsets(EdgeInsets(top: 4, leading: 4, bottom: 4, trailing: 4))
                 }
                 Button {
-                    Task {
-                        await viewModel.addClient()
-                    }
+                    viewModel.addClient()
                 } label: {
                     Text("Save")
                         .frame(width: UIScreen.main.bounds.width)
