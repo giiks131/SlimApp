@@ -13,10 +13,9 @@ struct BorderedTextFieldStyle: TextFieldStyle {
 
     func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
-            .padding()
-            .overlay(
-                RoundedRectangle(cornerRadius: 15)
-                    .stroke(.black, lineWidth: 1)
-            )
+            .padding(.horizontal, 24)
+            .padding(.vertical)
+            .background(Color(UIColor.systemGray6))
+            .clipShape(Capsule(style: .continuous))
     }
 }

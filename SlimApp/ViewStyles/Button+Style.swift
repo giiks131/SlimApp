@@ -15,7 +15,7 @@ struct LargeButtonStyle: ButtonStyle {
             .padding()
             .foregroundColor(.white)
             .background(Color.mainTeal)
-            .cornerRadius(16)
+            .clipShape(Capsule(style: .continuous))
     }
 }
 
