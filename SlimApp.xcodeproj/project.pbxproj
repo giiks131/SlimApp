@@ -17,6 +17,9 @@
 		DB0DF453296F02F8001DAD3E /* DayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0DF452296F02F8001DAD3E /* DayPicker.swift */; };
 		DB0DF456296F0325001DAD3E /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0DF455296F0325001DAD3E /* Weekday.swift */; };
 		DB0DF45829706EA9001DAD3E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F2C6E296DBBE300EADAE6 /* HomeView.swift */; };
+		DB68B70B2979A04C0065A368 /* Spidey in Frameworks */ = {isa = PBXBuildFile; productRef = DB68B70A2979A04C0065A368 /* Spidey */; };
+		DB68B70E2979A4550065A368 /* NewClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68B70D2979A4550065A368 /* NewClientService.swift */; };
+		DB68B7112979A7600065A368 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68B7102979A7600065A368 /* Endpoints.swift */; };
 		F20F2C6D296DBBE300EADAE6 /* SlimAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F2C6C296DBBE300EADAE6 /* SlimAppApp.swift */; };
 		F20F2C71296DBBE400EADAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20F2C70296DBBE400EADAE6 /* Assets.xcassets */; };
 		F20F2C74296DBBE400EADAE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20F2C73296DBBE400EADAE6 /* Preview Assets.xcassets */; };
@@ -56,6 +59,8 @@
 		C19BD9BC296F06BE0037B081 /* NewClientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientViewModel.swift; sourceTree = "<group>"; };
 		DB0DF452296F02F8001DAD3E /* DayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPicker.swift; sourceTree = "<group>"; };
 		DB0DF455296F0325001DAD3E /* Weekday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weekday.swift; sourceTree = "<group>"; };
+		DB68B70D2979A4550065A368 /* NewClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientService.swift; sourceTree = "<group>"; };
+		DB68B7102979A7600065A368 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		F20F2C69296DBBE300EADAE6 /* SlimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20F2C6C296DBBE300EADAE6 /* SlimAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlimAppApp.swift; sourceTree = "<group>"; };
 		F20F2C6E296DBBE300EADAE6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -87,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB68B70B2979A04C0065A368 /* Spidey in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +113,7 @@
 			children = (
 				C19BD9BA296F02D80037B081 /* NewClientView.swift */,
 				C19BD9BC296F06BE0037B081 /* NewClientViewModel.swift */,
+				DB68B70D2979A4550065A368 /* NewClientService.swift */,
 				9E948EEF298021AC00174C0E /* BMICalculator.swift */,
 			);
 			path = NewClient;
@@ -116,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				DB0DF452296F02F8001DAD3E /* DayPicker.swift */,
-				DB0DF455296F0325001DAD3E /* Weekday.swift */,
 			);
 			path = DayPicker;
 			sourceTree = "<group>";
@@ -137,6 +143,26 @@
 				9ECA5204297841D300D61F4E /* CustomColorPalette.swift */,
 			);
 			path = ClientList;
+			sourceTree = "<group>";
+		};
+		DB68B70C2979A3100065A368 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB0DF455296F0325001DAD3E /* Weekday.swift */,
+				F2B42BFF2979331800DB3721 /* Client.swift */,
+				F2B42C0529797F1000DB3721 /* Trainer.swift */,
+				F2B42C01297933E400DB3721 /* Sex.swift */,
+				F2B42C032979345400DB3721 /* WorkoutObjective.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB68B70F2979A7570065A368 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DB68B7102979A7600065A368 /* Endpoints.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		F20F2C60296DBBE300EADAE6 = {
@@ -162,14 +188,12 @@
 			isa = PBXGroup;
 			children = (
 				F20F2C6C296DBBE300EADAE6 /* SlimAppApp.swift */,
+				DB68B70F2979A7570065A368 /* Networking */,
 				DB0DF45C2971A457001DAD3E /* ClientList */,
 				C19BD9B9296F02A00037B081 /* NewClient */,
 				DB0DF45B2971A44E001DAD3E /* ClientDetails */,
 				DB0DF454296F0303001DAD3E /* DayPicker */,
-				F2B42BFF2979331800DB3721 /* Client.swift */,
-				F2B42C0529797F1000DB3721 /* Trainer.swift */,
-				F2B42C01297933E400DB3721 /* Sex.swift */,
-				F2B42C032979345400DB3721 /* WorkoutObjective.swift */,
+				DB68B70C2979A3100065A368 /* Models */,
 				F20F2C70296DBBE400EADAE6 /* Assets.xcassets */,
 				F20F2C72296DBBE400EADAE6 /* Preview Content */,
 			);
@@ -237,6 +261,9 @@
 			dependencies = (
 			);
 			name = SlimApp;
+			packageProductDependencies = (
+				DB68B70A2979A04C0065A368 /* Spidey */,
+			);
 			productName = SlimApp;
 			productReference = F20F2C69296DBBE300EADAE6 /* SlimApp.app */;
 			productType = "com.apple.product-type.application";
@@ -273,6 +300,9 @@
 				Base,
 			);
 			mainGroup = F20F2C60296DBBE300EADAE6;
+			packageReferences = (
+				DB68B7092979A04C0065A368 /* XCRemoteSwiftPackageReference "Spidey" */,
+			);
 			productRefGroup = F20F2C6A296DBBE300EADAE6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -357,7 +387,9 @@
 				9E948EF0298021AC00174C0E /* BMICalculator.swift in Sources */,
 				F20F2C7B296DBD6D00EADAE6 /* ClientCard.swift in Sources */,
 				DB0DF453296F02F8001DAD3E /* DayPicker.swift in Sources */,
+				DB68B7112979A7600065A368 /* Endpoints.swift in Sources */,
 				9ECA5205297841D300D61F4E /* CustomColorPalette.swift in Sources */,
+				DB68B70E2979A4550065A368 /* NewClientService.swift in Sources */,
 				C19BD9BD296F06BE0037B081 /* NewClientViewModel.swift in Sources */,
 				C19BD9BB296F02D80037B081 /* NewClientView.swift in Sources */,
 				DB0DF456296F0325001DAD3E /* Weekday.swift in Sources */,
@@ -667,6 +699,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB68B7092979A04C0065A368 /* XCRemoteSwiftPackageReference "Spidey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/inTheAM/Spidey";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB68B70A2979A04C0065A368 /* Spidey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB68B7092979A04C0065A368 /* XCRemoteSwiftPackageReference "Spidey" */;
+			productName = Spidey;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F20F2C61296DBBE300EADAE6 /* Project object */;
 }
