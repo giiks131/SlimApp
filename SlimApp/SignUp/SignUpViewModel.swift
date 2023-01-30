@@ -8,7 +8,13 @@
 import Foundation
 
 final class SignUpViewModel: ObservableObject {
-    
+
+    private let service: SignUpServiceProtocol
+
+    init(service: SignUpServiceProtocol = SignUpTrainerService()) {
+        self.service = service
+    }
+
     @Published var email: String = ""
     @Published var name: String = ""
     @Published var password: String = ""

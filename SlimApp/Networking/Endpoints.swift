@@ -9,5 +9,6 @@ import Spidey
 
 extension Endpoint {
     static let newClient = Endpoint(httpMethod: .post, url: "/clients")
-    static let newTrainer = Endpoint(httpMethod: .post, url: "/trainers")
+    static let newTrainer = Endpoint(httpMethod: .post, url: "/trainers/signup")
+    static let signInTrainer = Endpoint(httpMethod: .post, url: "/trainers/signin")
 }

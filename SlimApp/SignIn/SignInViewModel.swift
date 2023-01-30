@@ -9,6 +9,12 @@ import Foundation
 
 final class SignInViewModel: ObservableObject {
 
+    private let service: SignInServiceProtocol
+
+    init(service: SignInServiceProtocol = SignInService()) {
+        self.service = service
+    }
+
     @Published var email: String = ""
     @Published var password: String = ""
 
