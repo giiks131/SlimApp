@@ -9,13 +9,11 @@ import Spidey
 
 protocol SignUpServiceProtocol {
 
-//    @discardableResult
     func addNew(trainer: Trainer.New) async throws -> Trainer
 }
 
 struct SignUpTrainerService: SignUpServiceProtocol {
 
-//    @discardableResult
     func addNew(trainer: Trainer.New) async throws -> Trainer {
         try await NetworkManager()
             .performRequest(endpoint: .newTrainer,
