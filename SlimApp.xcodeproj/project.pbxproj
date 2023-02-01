@@ -23,6 +23,7 @@
 		DB0DF453296F02F8001DAD3E /* DayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0DF452296F02F8001DAD3E /* DayPicker.swift */; };
 		DB0DF456296F0325001DAD3E /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0DF455296F0325001DAD3E /* Weekday.swift */; };
 		DB0DF45829706EA9001DAD3E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F2C6E296DBBE300EADAE6 /* HomeView.swift */; };
+		DB3CDA5E298AA58E00DC4D77 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = DB3CDA5D298AA58E00DC4D77 /* KeychainAccess */; };
 		DB68B70B2979A04C0065A368 /* Spidey in Frameworks */ = {isa = PBXBuildFile; productRef = DB68B70A2979A04C0065A368 /* Spidey */; };
 		DB68B70E2979A4550065A368 /* NewClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68B70D2979A4550065A368 /* NewClientService.swift */; };
 		DB68B7112979A7600065A368 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68B7102979A7600065A368 /* Endpoints.swift */; };
@@ -104,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB3CDA5E298AA58E00DC4D77 /* KeychainAccess in Frameworks */,
 				DB68B70B2979A04C0065A368 /* Spidey in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +307,7 @@
 			name = SlimApp;
 			packageProductDependencies = (
 				DB68B70A2979A04C0065A368 /* Spidey */,
+				DB3CDA5D298AA58E00DC4D77 /* KeychainAccess */,
 			);
 			productName = SlimApp;
 			productReference = F20F2C69296DBBE300EADAE6 /* SlimApp.app */;
@@ -344,6 +347,7 @@
 			mainGroup = F20F2C60296DBBE300EADAE6;
 			packageReferences = (
 				DB68B7092979A04C0065A368 /* XCRemoteSwiftPackageReference "Spidey" */,
+				DB3CDA5C298AA58E00DC4D77 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = F20F2C6A296DBBE300EADAE6 /* Products */;
 			projectDirPath = "";
@@ -750,6 +754,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DB3CDA5C298AA58E00DC4D77 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		DB68B7092979A04C0065A368 /* XCRemoteSwiftPackageReference "Spidey" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/inTheAM/Spidey";
@@ -761,6 +773,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DB3CDA5D298AA58E00DC4D77 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB3CDA5C298AA58E00DC4D77 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
 		DB68B70A2979A04C0065A368 /* Spidey */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DB68B7092979A04C0065A368 /* XCRemoteSwiftPackageReference "Spidey" */;
