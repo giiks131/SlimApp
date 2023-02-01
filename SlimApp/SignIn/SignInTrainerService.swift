@@ -9,16 +9,21 @@ import Spidey
 
 /// Requirements for services that would like to perform actions to login the user
 protocol SignInServiceProtocol {
-    /// Performs an action to add a new client to the trainer's list.
-    /// - Parameter client: The client to add to the trainer's list,
-    ///                     as an instance of `Client.New`.
+    /// /// Performs an action to sign in a user into the app.
+    /// - Parameters email & password: The user's email and password to check on the server,
+    ///                     as `String`.
+    ///                     
     /// - Throws: A `RequestError` in case the action fails.
-    /// - Returns: The registered client as an instance of `Client`
+    /// - Returns: The logged in user as an instance of `Trainer`
     func signIn(email: String, password: String) async throws -> Trainer
 }
 
 struct SignInService: SignInServiceProtocol {
-
+    /// Performs a network request to sign in a user into the app.
+    /// - Parameter  email & password: The user's email and password to check on the server,
+    ///                     as `String`.
+    /// - Throws: A `RequestError` in case the network call fails.
+    /// - Returns: The logged in user as an instance of `Trainer`
     func signIn(email: String, password: String) async throws -> Trainer {
         guard let loginString = "\(email):\(password)"
             .data(using: .utf8)?
