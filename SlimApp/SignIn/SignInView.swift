@@ -32,7 +32,7 @@ struct SignInView: View {
             .padding(.vertical)
 
             Button {
-                viewModel.doSignIn()
+                viewModel.signIn()
             } label: {
                 Text("Sign in")
             }

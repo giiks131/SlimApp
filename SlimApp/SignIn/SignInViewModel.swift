@@ -18,7 +18,7 @@ final class SignInViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var password: String = ""
 
-    func doSignIn() {
+    func signIn() {
         #warning("Do some sign in stuff")
     }
 }
