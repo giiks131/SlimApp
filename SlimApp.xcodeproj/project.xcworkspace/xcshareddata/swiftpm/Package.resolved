@@ -1,12 +1,21 @@
 {
   "pins" : [
     {
+      "identity" : "keychainaccess",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kishikawakatsumi/KeychainAccess",
+      "state" : {
+        "branch" : "master",
+        "revision" : "6299daec1d74be12164fec090faf9ed14d0da9d6"
+      }
+    },
+    {
       "identity" : "spidey",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/inTheAM/Spidey",
       "state" : {
         "branch" : "main",
-        "revision" : "1ff4eeb2293599609ab6d6efc911a2ef397171b6"
+        "revision" : "2dc4f486ee4934f7cdb639a220073bbc3bd01358"
       }
     }
   ],
