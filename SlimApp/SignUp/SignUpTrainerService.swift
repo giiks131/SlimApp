@@ -12,14 +12,14 @@ protocol SignUpServiceProtocol {
     /// Performs an action to register a new user to the list of registered users.
     /// - Parameter trainer: The user to add to the list of registered users,
     ///                     as an instance of `Trainer.New`.
-    /// - Throws: A `RequestError` in case the action fails.
+    /// - Throws: `RequestError` in case the action fails.
     /// - Returns: The registered user as an instance of `Trainer`
     func signUp(trainer: Trainer.New) async throws -> Trainer
 }
 
 struct SignUpTrainerService: SignUpServiceProtocol {
     /// Performs a network request to add a new user to the list of registered users.
-    /// - Parameter client: The user to send to the server to add to the list of registered users,
+    /// - Parameter trainer: The user to send to the server to add to the list of registered users,
     ///                     as an instance of `Trainer.New`.
     /// - Throws: A `RequestError` in case the network call fails.
     /// - Returns: The registered user as an instance of `Trainer`
