@@ -1,7 +1,7 @@
 # SlimApp 💪
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)]([https://GitHub.com/giiks131/SlimApp/graphs/contributors)
 
-[![Swift Version](https://img.shields.io/badge/Swift-5.0-brightgreen.svg)](https://swift.org)
+[![Swift Version](https://img.shields.io/badge/Swift-5-brightgreen.svg)](https://swift.org)
 [![Vapor version](https://img.shields.io/badge/Vapor-4-30B6FC.svg)](https://vapor.codes)
 
 SlimApp allows fitness trainers to manage their clients and their training schedules. 
