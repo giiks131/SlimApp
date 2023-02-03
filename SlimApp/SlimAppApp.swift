@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct SlimAppApp: App {
+    @StateObject private var userStore = UserStore()
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            if userStore.trainer != nil {
+                HomeView()
+                    .environmentObject(userStore)
+            } else {
+                SignInView()
+            }
         }
     }
 }
