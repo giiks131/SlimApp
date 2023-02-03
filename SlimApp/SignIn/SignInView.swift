@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SignInView: View {
-
     @StateObject var viewModel: SignInViewModel = SignInViewModel()
 
     var body: some View {
@@ -29,7 +28,7 @@ struct SignInView: View {
                     }
                 }
                 .padding(.vertical)
-                
+
                 Button {
                     viewModel.signIn()
                 } label: {

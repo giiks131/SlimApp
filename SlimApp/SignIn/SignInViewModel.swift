@@ -26,7 +26,8 @@ final class SignInViewModel: ObservableObject {
             fatalError("can't transform into a string")
         }
         Task {
-            try await service.signIn(loginString: loginString)
+            let trainer = try await service.signIn(loginString: loginString)
+            UserStore.shared.save(trainer)
         }
     }
 }
