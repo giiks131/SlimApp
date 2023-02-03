@@ -22,7 +22,8 @@ final class SignUpViewModel: ObservableObject {
     func signUp() {
         let trainer = Trainer.New(name: name, email: email, password: password)
         Task {
-         try await service.signUp(trainer: trainer)
+            let trainer = try await service.signUp(trainer: trainer)
+            UserStore.shared.save(trainer)
         }
     }
 }
