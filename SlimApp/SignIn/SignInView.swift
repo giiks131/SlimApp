@@ -9,37 +9,37 @@ import SwiftUI
 
 struct SignInView: View {
 
-    @ObservedObject var viewModel: SignInViewModel = SignInViewModel()
+    @StateObject var viewModel: SignInViewModel = SignInViewModel()
 
     var body: some View {
-        VStack {
-            TextField("", text: $viewModel.email, prompt: Text("Email"))
-                .textFieldStyle(BorderedTextFieldStyle())
-            SecureField("", text: $viewModel.password, prompt: Text("Password"))
-                .textFieldStyle(BorderedTextFieldStyle())
-                .padding(.top, 16)
-            HStack {
-                Text("Don't have an account?")
-                    .foregroundColor(.gray)
-                Button {
-                    #warning("open sign up screen")
-                } label: {
-                    Text("Sign Up")
-                        .bold()
-                        .foregroundColor(.blue)
+        NavigationView {
+            VStack {
+                TextField("", text: $viewModel.email, prompt: Text("Email"))
+                    .textFieldStyle(BorderedTextFieldStyle())
+                SecureField("", text: $viewModel.password, prompt: Text("Password"))
+                    .textFieldStyle(BorderedTextFieldStyle())
+                    .padding(.top, 16)
+                HStack {
+                    Text("Don't have an account?")
+                        .foregroundColor(.gray)
+                    NavigationLink(destination: SignUpView()) {
+                        Text("Sign Up")
+                            .bold()
+                            .foregroundColor(.blue)
+                    }
                 }
+                .padding(.vertical)
+                
+                Button {
+                    viewModel.signIn()
+                } label: {
+                    Text("Sign in")
+                }
+                .buttonStyle(LargeButtonStyle())
+                .padding(.top)
             }
-            .padding(.vertical)
-
-            Button {
-                viewModel.signIn()
-            } label: {
-                Text("Sign in")
-            }
-            .buttonStyle(LargeButtonStyle())
-            .padding(.top)
+            .padding()
         }
-        .padding()
     }
 }
 
