@@ -25,7 +25,7 @@ struct SignInService: SignInServiceProtocol {
     ///   - email: user's email to check on the server, as `String`
     ///   - password: user's password to check on the server as `String`
     ///
-    ///   - Throws: A `RequestError` in case the network call fails.
+    /// - Throws: A `RequestError` in case the network call fails.
     /// - Returns: The logged in user as an instance of `Trainer`
     func signIn(loginString: String) async throws -> Trainer {
          try await NetworkManager().performRequest(endpoint: .signIn,
