@@ -16,7 +16,7 @@ protocol SignInServiceProtocol {
     ///                     
     /// - Throws: A `RequestError` in case the action fails.
     /// - Returns: The logged in user as an instance of `Trainer`
-    func signIn(email: String, password: String) async throws -> Trainer
+    func signIn(loginString: String) async throws -> Trainer
 }
 
 struct SignInService: SignInServiceProtocol {
@@ -27,15 +27,8 @@ struct SignInService: SignInServiceProtocol {
     ///
     ///   - Throws: A `RequestError` in case the network call fails.
     /// - Returns: The logged in user as an instance of `Trainer`
-    func signIn(email: String, password: String) async throws -> Trainer {
-        guard let loginString = "\(email):\(password)"
-            .data(using: .utf8)?
-            .base64EncodedString()
-        else {
-            fatalError("can't transform into a string")
-        }
-
-        return try await NetworkManager().performRequest(endpoint: .signIn,
+    func signIn(loginString: String) async throws -> Trainer {
+         try await NetworkManager().performRequest(endpoint: .signIn,
                                                          authType: .basic(value: loginString),
                                                          response: Trainer.self)
     }

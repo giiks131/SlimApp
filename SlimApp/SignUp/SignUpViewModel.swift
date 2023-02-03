@@ -19,7 +19,7 @@ final class SignUpViewModel: ObservableObject {
     @Published var name: String = ""
     @Published var password: String = ""
 
-    func signIn() {
+    func signUp() {
         #warning("Do some sign in stuff")
     }
 }

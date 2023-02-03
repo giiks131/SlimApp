@@ -20,5 +20,15 @@ final class SignInViewModel: ObservableObject {
 
     func signIn() {
         #warning("Do some sign in stuff")
+        guard let loginString = "\(email):\(password)"
+            .data(using: .utf8)?
+            .base64EncodedString()
+        else {
+            fatalError("can't transform into a string")
+        }
+        Task {
+            try await service.signIn(loginString: loginString)
+            
+        }
     }
 }
