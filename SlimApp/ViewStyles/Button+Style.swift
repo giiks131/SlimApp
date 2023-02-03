@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LargeButtonStyle: ButtonStyle {
+    @Environment(\.isEnabled) var isEnabled
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .bold()
@@ -16,6 +17,8 @@ struct LargeButtonStyle: ButtonStyle {
             .foregroundColor(.white)
             .background(Color.mainTeal)
             .clipShape(Capsule(style: .continuous))
+            .opacity(configuration.isPressed ? 0.4 : 1)
+            .grayscale(isEnabled ? 0 : 1)
     }
 }
 
