@@ -33,6 +33,8 @@
 		F20F2C71296DBBE400EADAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20F2C70296DBBE400EADAE6 /* Assets.xcassets */; };
 		F20F2C74296DBBE400EADAE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20F2C73296DBBE400EADAE6 /* Preview Assets.xcassets */; };
 		F20F2C7B296DBD6D00EADAE6 /* ClientCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F2C7A296DBD6D00EADAE6 /* ClientCard.swift */; };
+		F210B26F2987CEDE0087AFDA /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210B26E2987CEDE0087AFDA /* SignUpService.swift */; };
+		F210B2712987D06E0087AFDA /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210B2702987D06E0087AFDA /* SignInService.swift */; };
 		F2B42C002979331800DB3721 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B42BFF2979331800DB3721 /* Client.swift */; };
 		F2B42C02297933E400DB3721 /* Sex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B42C01297933E400DB3721 /* Sex.swift */; };
 		F2B42C042979345400DB3721 /* WorkoutObjective.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B42C032979345400DB3721 /* WorkoutObjective.swift */; };
@@ -84,6 +86,8 @@
 		F20F2C70296DBBE400EADAE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F20F2C73296DBBE400EADAE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F20F2C7A296DBD6D00EADAE6 /* ClientCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCard.swift; sourceTree = "<group>"; };
+		F210B26E2987CEDE0087AFDA /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
+		F210B2702987D06E0087AFDA /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
 		F2B42BFF2979331800DB3721 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		F2B42C01297933E400DB3721 /* Sex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sex.swift; sourceTree = "<group>"; };
 		F2B42C032979345400DB3721 /* WorkoutObjective.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutObjective.swift; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 			children = (
 				C1DE432C2980374A00760170 /* SignInView.swift */,
 				C1DE432E29803AA100760170 /* SignInViewModel.swift */,
+				F210B2702987D06E0087AFDA /* SignInService.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			children = (
 				C1DE433329815D2200760170 /* SignUpView.swift */,
 				C1DE433529815D2E00760170 /* SignUpViewModel.swift */,
+				F210B26E2987CEDE0087AFDA /* SignUpService.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -447,7 +453,9 @@
 				9E948EF0298021AC00174C0E /* BMICalculator.swift in Sources */,
 				F20F2C7B296DBD6D00EADAE6 /* ClientCard.swift in Sources */,
 				DB0DF453296F02F8001DAD3E /* DayPicker.swift in Sources */,
+				F210B2712987D06E0087AFDA /* SignInService.swift in Sources */,
 				DB68B7112979A7600065A368 /* Endpoints.swift in Sources */,
+				F210B26F2987CEDE0087AFDA /* SignUpService.swift in Sources */,
 				9ECA5205297841D300D61F4E /* CustomColorPalette.swift in Sources */,
 				DB68B70E2979A4550065A368 /* NewClientService.swift in Sources */,
 				C1DE433629815D2E00760170 /* SignUpViewModel.swift in Sources */,
