@@ -1,4 +1,5 @@
-# SlimApp 💪
+# [WIP] SlimApp 💪 
+
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)]([https://GitHub.com/giiks131/SlimApp/graphs/contributors)
 
 [![Swift Version](https://img.shields.io/badge/Swift-5-brightgreen.svg)](https://swift.org)
