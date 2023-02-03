@@ -20,6 +20,9 @@ final class SignUpViewModel: ObservableObject {
     @Published var password: String = ""
 
     func signUp() {
-        #warning("Do some sign in stuff")
+        let trainer = Trainer.New(name: name, email: email, password: password)
+        Task {
+         try await service.signUp(trainer: trainer)
+        }
     }
 }
