@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct SlimAppApp: App {
-    @StateObject private var userStore = UserStore()
+    @StateObject private var userStore = UserStore.shared
     var body: some Scene {
         WindowGroup {
             if userStore.trainer != nil {
