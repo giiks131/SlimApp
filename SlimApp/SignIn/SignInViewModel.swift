@@ -19,7 +19,6 @@ final class SignInViewModel: ObservableObject {
     @Published var password: String = ""
 
     func signIn() {
-        #warning("Do some sign in stuff")
         guard let loginString = "\(email):\(password)"
             .data(using: .utf8)?
             .base64EncodedString()
@@ -28,7 +27,6 @@ final class SignInViewModel: ObservableObject {
         }
         Task {
             try await service.signIn(loginString: loginString)
-            
         }
     }
 }
