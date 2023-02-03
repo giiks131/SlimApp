@@ -17,7 +17,7 @@ protocol SignUpServiceProtocol {
     func signUp(trainer: Trainer.New) async throws -> Trainer
 }
 
-struct SignUpTrainerService: SignUpServiceProtocol {
+struct SignUpService: SignUpServiceProtocol {
     /// Performs a network request to add a new user to the list of registered users.
     /// - Parameter trainer: The user to send to the server to add to the list of registered users,
     ///                     as an instance of `Trainer.New`.

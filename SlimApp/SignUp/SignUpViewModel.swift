@@ -11,7 +11,7 @@ final class SignUpViewModel: ObservableObject {
 
     private let service: SignUpServiceProtocol
 
-    init(service: SignUpServiceProtocol = SignUpTrainerService()) {
+    init(service: SignUpServiceProtocol = SignUpService()) {
         self.service = service
     }
 
