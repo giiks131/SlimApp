@@ -36,7 +36,13 @@ extension Client {
 
 #if DEBUG
 extension Client {
-    static let sample = Client(id: UUID(), name: "Antonio Ferraris", avatar: "💪🏽", age: 28, bodyMassIndex: 24.5, workoutDays: [.monday, .wednesday, .friday], objectives: [.cardioFitness, .coreStrength])
+    static let sample = Client(id: UUID(),
+                               name: "Antonio Ferraris",
+                               avatar: "💪🏽",
+                               age: 28,
+                               bodyMassIndex: 24.5,
+                               workoutDays: [.monday, .wednesday, .friday],
+                               objectives: [.cardioFitness, .coreStrength])
 }
 
 #endif
