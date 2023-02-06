@@ -8,9 +8,9 @@
 import Foundation
 
 enum WorkoutObjective: String, Codable, CaseIterable {
-    case weightLoss,
-         muscleBulking,
-         coreStrength,
-         bodyToning,
-         cardioFitness
+    case weightLoss = "Weight Loss",
+         muscleBulking = "Muscle Bulk",
+         coreStrength = "Core Strength",
+         bodyToning = "Body Toning",
+         cardioFitness = "Cardio Fitness"
 }
