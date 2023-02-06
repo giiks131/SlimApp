@@ -7,7 +7,6 @@
 
 import Foundation
 
-@MainActor
 final class UserStore: ObservableObject {
     static let shared = UserStore()
 
@@ -19,7 +18,9 @@ final class UserStore: ObservableObject {
     func save(_ user: Trainer) {
         do {
             try KeychainManager.save(key: .trainer, data: user)
-            trainer = user
+            Task { @MainActor in
+                trainer = user
+            }
         } catch {
             self.error = error as? KeychainManager.KeychainError
         }
@@ -28,7 +29,9 @@ final class UserStore: ObservableObject {
     func deleteUser() {
         do {
             try KeychainManager.delete(key: .trainer)
-            trainer = nil
+            Task { @MainActor in
+                trainer = nil
+            }
         } catch {
             self.error = error as? KeychainManager.KeychainError
         }
