@@ -8,38 +8,36 @@
 import SwiftUI
 
 struct ClientCard: View {
-    var clientName: String = "Antonio Ferraris"
+    let client: Client
     var body: some View {
         HStack(spacing: 0) {
             RoundedRectangle(cornerRadius: 16, style: .continuous)
                 .frame(width: 61, height: 61, alignment: .center)
                 .padding()
                 .overlay {
-                    Image(systemName: "person.fill")
+                    Text(client.avatar)
                         .foregroundColor(.black.opacity(0.2))
-                        .font(.system(size: 50))
+                        .font(.system(size: 40))
                 }
             VStack(alignment: .leading, spacing: 4) {
-                Text(clientName)
+                Text(client.name)
                     .font(.title2.bold())
+                Spacer(minLength: 0)
                 HStack(spacing: 4) {
-                    Text("Muscle")
-                        .font(.subheadline)
-                        .foregroundColor(.black)
-                        .padding(.horizontal, 8)
-                        .background {
-                            RoundedRectangle(cornerRadius: 16)
-                        }
-                    Text("Weight-loss")
-                        .font(.subheadline)
-                        .foregroundColor(.black)
-                        .padding(.horizontal, 8)
-                        .background {
-                            RoundedRectangle(cornerRadius: 16)
-                        }
+                    ForEach(0..<min(2, client.objectives.count)) { index in
+                        Text(client.objectives[index].rawValue)
+                            .font(.caption)
+                            .foregroundColor(.black)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 4)
+                            .background {
+                                RoundedRectangle(cornerRadius: 16)
+                            }
+                    }
+
                 }
             }
-            Spacer()
+            .padding([.vertical, .trailing])
             ZStack {
                 Rectangle()
                     .foregroundColor(Color.mainBlack)
@@ -65,6 +63,6 @@ struct ClientCard: View {
 
 struct ClientCard_Previews: PreviewProvider {
     static var previews: some View {
-        ClientCard()
+        ClientCard(client: .sample)
     }
 }
