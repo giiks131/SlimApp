@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ClientList: View {
-    @State private var isShowingSheet = false
+    @StateObject private var viewModel = ClientListViewModel()
 
     var body: some View {
         NavigationView {
@@ -16,17 +16,19 @@ struct ClientList: View {
                 Color("Background")
                     .ignoresSafeArea()
                 ScrollView {
-                    // MARK: display View with array of clients' cards Data
+                    ForEach(viewModel.clients) { client in
+
+                    }
                 }
                 .navigationTitle("Clients")
                 .toolbar {
                     Button {
-                        isShowingSheet.toggle()
+                        viewModel.isAddingNewClient.toggle()
                     } label: {
                         Image(systemName: "plus")
                     }
                 }
-                .sheet(isPresented: $isShowingSheet) {
+                .sheet(isPresented: $viewModel.isAddingNewClient) {
                     // MARK: View with new client info
                     NewClientView()
                 }
@@ -35,7 +37,7 @@ struct ClientList: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct ClientList_Previews: PreviewProvider {
     static var previews: some View {
         ClientList()
     }

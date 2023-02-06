@@ -26,6 +26,7 @@
 		DB3CDA5E298AA58E00DC4D77 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = DB3CDA5D298AA58E00DC4D77 /* KeychainAccess */; };
 		DB3CDA61298AA6D600DC4D77 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3CDA60298AA6D600DC4D77 /* KeychainManager.swift */; };
 		DB3CDA63298AB9E300DC4D77 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3CDA62298AB9E300DC4D77 /* UserStore.swift */; };
+		DB3CDA652991401800DC4D77 /* ClientListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3CDA642991401800DC4D77 /* ClientListViewModel.swift */; };
 		DB68B70B2979A04C0065A368 /* Spidey in Frameworks */ = {isa = PBXBuildFile; productRef = DB68B70A2979A04C0065A368 /* Spidey */; };
 		DB68B70E2979A4550065A368 /* NewClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68B70D2979A4550065A368 /* NewClientService.swift */; };
 		DB68B7112979A7600065A368 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68B7102979A7600065A368 /* Endpoints.swift */; };
@@ -78,6 +79,7 @@
 		DB0DF455296F0325001DAD3E /* Weekday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weekday.swift; sourceTree = "<group>"; };
 		DB3CDA60298AA6D600DC4D77 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		DB3CDA62298AB9E300DC4D77 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		DB3CDA642991401800DC4D77 /* ClientListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientListViewModel.swift; sourceTree = "<group>"; };
 		DB68B70D2979A4550065A368 /* NewClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientService.swift; sourceTree = "<group>"; };
 		DB68B7102979A7600065A368 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		F20F2C69296DBBE300EADAE6 /* SlimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +193,7 @@
 			children = (
 				F20F2C7A296DBD6D00EADAE6 /* ClientCard.swift */,
 				F20F2C6E296DBBE300EADAE6 /* ClientList.swift */,
+				DB3CDA642991401800DC4D77 /* ClientListViewModel.swift */,
 				9ECA5204297841D300D61F4E /* CustomColorPalette.swift */,
 			);
 			path = ClientList;
@@ -455,6 +458,7 @@
 				DB0DF453296F02F8001DAD3E /* DayPicker.swift in Sources */,
 				F210B2712987D06E0087AFDA /* SignInService.swift in Sources */,
 				DB68B7112979A7600065A368 /* Endpoints.swift in Sources */,
+				DB3CDA652991401800DC4D77 /* ClientListViewModel.swift in Sources */,
 				F210B26F2987CEDE0087AFDA /* SignUpService.swift in Sources */,
 				9ECA5205297841D300D61F4E /* CustomColorPalette.swift in Sources */,
 				DB68B70E2979A4550065A368 /* NewClientService.swift in Sources */,
