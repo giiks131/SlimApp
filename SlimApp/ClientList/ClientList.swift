@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct ClientList: View {
     @State private var isShowingSheet = false
 
     var body: some View {
@@ -37,6 +37,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        ClientList()
     }
 }

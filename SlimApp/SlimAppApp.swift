@@ -13,7 +13,7 @@ struct SlimAppApp: App {
     var body: some Scene {
         WindowGroup {
             if userStore.trainer != nil {
-                HomeView()
+                ClientList()
                     .environmentObject(userStore)
             } else {
                 SignInView()
