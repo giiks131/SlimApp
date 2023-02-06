@@ -27,7 +27,7 @@ final class SignInViewModel: ObservableObject {
         }
         Task {
             let trainer = try await service.signIn(loginString: loginString)
-            UserStore.shared.save(trainer)
+            await UserStore.shared.save(trainer)
         }
     }
 }

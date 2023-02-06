@@ -40,7 +40,7 @@ struct SignUpView: View {
                 .textFieldStyle(BorderedTextFieldStyle())
                 .padding([.vertical])
             Button {
-                #warning("Add some action")
+                viewModel.signUp()
             } label: {
                 Text("Get started")
             }
