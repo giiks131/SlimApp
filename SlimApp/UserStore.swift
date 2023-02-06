@@ -7,10 +7,12 @@
 
 import Foundation
 
+@MainActor
 final class UserStore: ObservableObject {
     static let shared = UserStore()
+
     private init() {}
-    
+
     @Published private(set) var trainer: Trainer? = try? KeychainManager.load(key: .trainer)
     @Published private(set) var error: KeychainManager.KeychainError?
 
